@@ -9,16 +9,16 @@ Metodologia aplicada al proyecto SCRUM
 
 integrantes del grupo:
 
--Alegre Linares Rosario Lohana
+-Alegre Linares Rosario Lohana (Team Developer)
 
--Alfaro Zapana Estefany Reyna
+-Alfaro Zapana Estefany Reyna (Scrum Master)
 
--Gallegos Batallanos Carlos Bryan
+-Gallegos Batallanos Carlos Bryan (Team Developer)
 
--Ordoñez Ccoriccaza Juan Carlos
+-Ordoñez Ccoriccaza Juan Carlos (Team Developer)
 
--Revilla Tellez Jimy Gabriel
+-Revilla Tellez Jimy Gabriel (Team Developer)
 
--Vargas Quispe Estith Bryan
+-Vargas Quispe Estith Bryan (Product Owner)
 
--Vera Mamani Jose Miguel
+-Vera Mamani Jose Miguel (Team Developer)
