@@ -47,13 +47,13 @@ video::-webkit-media-controls {
 
 .primary-button a {
   display: inline-block;
-  background-color: #5da324;
+  background-color: #2471A3;
   color: #f0e3e3;
   font-size: 13px;
   padding: 12px 18px;
   border-radius: 3px;
   text-decoration: none;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
 }
 
 .primary-button a:hover {
