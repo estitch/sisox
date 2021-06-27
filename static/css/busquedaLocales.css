@@ -1,0 +1,98 @@
+
+table, th, td {
+    border: 1px solid black;
+    border-radius:2px;
+}
+th, td {
+    padding: 15px;
+    text-align: center;
+}
+table tr:nth-child(even) {
+    background-color:rgb(241, 180, 147);
+}
+table tr:nth-child(odd) {
+    background-color: rgb(243, 173, 160);
+}
+table th {
+    color: white;
+    background-color: #2471A3;
+    font-family: 'Quicksand';
+}
+h1{
+    text-align: center;
+    font-weight: 700;
+}
+
+form{
+    background:blanchedalmond;
+    padding: 40px 30px;
+    box-shadow: 0 0 8px 0 rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+}
+
+.form{
+    width: 100%;
+    margin: auto;
+}
+.titulo{
+    background:blanchedalmond;
+}
+form .group{
+    position: relative;
+    margin: 100px;
+    background: black;
+}
+
+
+input{
+    background: none;
+    color: blue;
+    font-size: 16px;
+    padding: 4px 4px 4px 4px;
+    display: ruby-base;
+    width: 100%;
+}
+
+
+input:focus{
+    outline: none;
+    color: rgb(94,93,93);
+}
+
+input:focus~label{
+    top :-14px;
+    font-size: 10px;
+    color: #2196f3;
+}
+
+.boton{
+    font-size: 20px;
+    color: rebeccapurple;
+    background: salmon;
+}
+
+.redondeado {
+    border-radius: 5px;
+  }
+  .confondo {
+    background-color: #def;
+  }
+
+  .reserva-button a {
+    display: inline-block;
+    background-color: #050607;
+    color: #f0e3e3;
+    font-size: 13px;
+    padding: 12px 14px;
+    border-radius: 2px;
+    text-decoration: none;
+    border: 1px solid transparent;
+  }
+  
+  .reserva-button a:hover {
+    background-color: transparent;
+    border: 1px solid #2471A3;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+  }
