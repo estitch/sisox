@@ -7,12 +7,12 @@ th, td {
     padding: 15px;
     text-align: center;
 }
-table tr:nth-child(even) {
+/*table tr:nth-child(even) {
     background-color:rgb(241, 180, 147);
 }
 table tr:nth-child(odd) {
     background-color: rgb(243, 173, 160);
-}
+}*/
 table th {
     color: white;
     background-color: #2471A3;
@@ -24,7 +24,7 @@ h1{
 }
 
 form{
-    background:blanchedalmond;
+   
     padding: 40px 30px;
     box-shadow: 0 0 8px 0 rgba(255, 255, 255, 0.8);
     border-radius: 8px;
@@ -35,7 +35,7 @@ form{
     margin: auto;
 }
 .titulo{
-    background:blanchedalmond;
+    
 }
 form .group{
     position: relative;
@@ -95,4 +95,9 @@ input:focus~label{
     -moz-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
     -webkit-transition: all 0.2s linear;
+  }
+
+  .imagen{
+      width: 10%;
+      justify-content: center;
   }
