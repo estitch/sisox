@@ -7,5 +7,5 @@ def index(request):
 def Cliente(request):
     return render(request, "cliente.html")
 
-def Administrator(request):
-    return render(request, "Admintrador.html")
+def Administrador(request):
+    return render(request, "Administrador.html")
