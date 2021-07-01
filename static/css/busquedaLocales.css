@@ -73,31 +73,42 @@ input:focus~label{
 
 .redondeado {
     border-radius: 5px;
-  }
-  .confondo {
-    background-color: #def;
-  }
+}
+.confondo {
+background-color: #def;
+}
 
-  .reserva-button a {
-    display: inline-block;
-    background-color: #050607;
-    color: #f0e3e3;
-    font-size: 13px;
-    padding: 12px 14px;
-    border-radius: 2px;
-    text-decoration: none;
-    border: 1px solid transparent;
-  }
-  
-  .reserva-button a:hover {
-    background-color: transparent;
-    border: 1px solid #2471A3;
-    -moz-transition: all 0.2s linear;
-    -o-transition: all 0.2s linear;
-    -webkit-transition: all 0.2s linear;
-  }
+.reserva-button a {
+display: inline-block;
+background-color: #050607;
+color: #f0e3e3;
+font-size: 13px;
+padding: 12px 14px;
+border-radius: 2px;
+text-decoration: none;
+border: 1px solid transparent;
+}
 
-  .imagen{
-      width: 10%;
-      justify-content: center;
-  }
+.reserva-button a:hover {
+background-color: transparent;
+border: 1px solid #2471A3;
+-moz-transition: all 0.2s linear;
+-o-transition: all 0.2s linear;
+-webkit-transition: all 0.2s linear;
+}
+
+.imagen{
+    width: 10%;
+    justify-content: center;
+}
+#logo2{
+    display: none;
+}
+
+@media (max-width: 850px){
+    #logo2{
+        display: inline;
+        width: 33px;
+        height: 33px;
+    }
+}
