@@ -1,0 +1,88 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Iniciar Sesión</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+  <link href="{% static 'https://fonts.googleapis.com/css?family=Nunito:400,600,700,800&display=swap' %}" rel="stylesheet">
+</head>
+<body>
+
+  <header class="header content">
+    <div class="header-video">
+      <video src="../static/videos/video.mp4" autoplay loop></video>
+    </div>
+  </header>
+  
+  <section class="top-part">
+    <div class="cont">
+      <div class="form sign-in">
+        <i class="fa fa-window-close "></i>
+        <h2>Iniciar Sesión Cliente</h2>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email">
+        </label>
+        <label>
+          <span>Contraseña</span>
+          <input type="password" name="password">
+        </label>
+        <button class="submit" type="button">Iniciar Sesión</button>
+        <p class="forgot-pass">Olvido su Contraseña?</p>
+  
+        <div class="social-media">
+          <ul>
+            <li><img src="../static/img/facebook.png"></li>
+            <li><img src="../static/img/twitter.png"></li>
+            <li><img src="../static/img/linkedin.png"></li>
+            <li><img src="../static/img/instagram.png"></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sub-cont">
+        <div class="img">
+          <div class="img-text m-up">
+            <h2>Usted es un administrador?</h2>
+            <p>Si usted desea logearse como administrador pulse aqui.</p>
+          </div>
+          <div class="img-text m-in">
+            <h2>Usted es un cliente?</h2>
+            <p>Si usted desea logearse como cliente pulse aqui.</p>
+          </div>
+          <div class="img-btn">
+            <span class="m-up">Iniciar Sesión</span>
+            <span class="m-in">Iniciar Sesión</span>
+          </div>
+        </div>
+        <div class="form sign-up">
+         <h2>Login de Administrador</h2>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email">
+        </label>
+        <label>
+          <span>Contraseña</span>
+          <input type="password" name="password">
+        </label>
+        <button class="submit" type="button">Iniciar Sesión</button>
+        <p class="forgot-pass">Olvido su Contraseña?</p>
+        <div class="social-media">
+          <ul>
+            <li><img src="../static/img/facebook.png"></li>
+            <li><img src="../static/img/twitter.png"></li>
+            <li><img src="../static/img/linkedin.png"></li>
+            <li><img src="../static/img/instagram.png"></li>
+          </ul>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+<script type="text/javascript" src="../static/js/script.js"></script>
+</body>
+</html>
