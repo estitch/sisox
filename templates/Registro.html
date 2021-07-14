@@ -23,9 +23,11 @@
         <h2>Registro de Cliente</h2>
        
         <div class="textbox">
-          <i class="fa fa-user-o" aria-hidden="true"></i>
-          {%csrf_token%}
+          <label >
+            {%csrf_token%}
           <input type="text" placeholder="Nombre y Apellido" name="first_name" requiered>
+          </label>
+          
         </div>
           <label>
             {% csrf_token %}
@@ -47,7 +49,8 @@
             {% csrf_token %}
             <input type="text" placeholder="Numero de DNI" name="dniCliente"  requiered>
           </label>
-          <button type="Submit" class="btn">Registrarse</button> 
+          
+          <button class="submit" type="btn">Registrarse</button>
       </form>
     </div>
 

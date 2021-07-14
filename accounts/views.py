@@ -36,7 +36,7 @@ def registerCliente(request):
 
         else:
             print('passwork incorrecto')
-        return redirect('index')
+        return redirect('logeoCliente')
     return render(request, "Registro.html")
 
 def logout(request):
