@@ -34,7 +34,6 @@ https://templatemo.com/tm-503-newline
           <video controls autoplay loop>
             <source src="../static/videos/video.mp4" type="video/mp4">
             <source src="../static/videos/video.ogg" type="video/ogg">
-          Your browser does not support the video tag.
           </video>
         </section>
         <section class="cd-hero">
@@ -51,8 +50,13 @@ https://templatemo.com/tm-503-newline
                 <!--<li><a href="#0"><div class="image-icon"><img src="../static/img/projects-icon.png"></div><h6></h6></a></li> -->
               </ul>
               <div class="primary-button" >
-                <a href="Login" style="margin: 30px">Inicio Sesión</a>
-                <a href="Registro" style="margin: 30px">Registrar</a>
+                {% if user.is_authenticated %}
+									<li style="color: white ;">Bienvenido ,{{user.username}}</li>
+									<a href="/accounts/logout">Logout</a>
+								{%else%}
+                <a href="accounts/logeoCliente" style="margin: 30px">Inicio Sesión</a>
+                <a href="accounts/registroCliente" style="margin: 30px">Registrar</a>
+                {%endif%}
               </div>
             </nav> 
           </div> <!-- .cd-slider-nav -->

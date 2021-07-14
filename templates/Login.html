@@ -19,27 +19,27 @@
   <section class="top-part">
     <div class="cont">
       <div class="form sign-in">
-        <i class="fa fa-window-close "></i>
-        <h2>Iniciar Sesión Cliente</h2>
-        <label>
-          <span>Email</span>
-          <input type="email" name="email">
-        </label>
-        <label>
-          <span>Contraseña</span>
-          <input type="password" name="password">
-        </label>
-        <button class="submit" type="button">Iniciar Sesión</button>
-        <p class="forgot-pass">Olvido su Contraseña?</p>
+        <form action="logeoCliente" method="POST">
+          <i class="fa fa-window-close "></i>
+           <h2>Iniciar Sesión Cliente</h2>
+            <br><br>
+            <label>
+              {%csrf_token%}
+              <span>Email</span>
+              <input type="text" name="username" required>
+            </label>
+            <label>
+              {%csrf_token%}
+             <span>Contraseña</span>
+              <input type="password" name="password" required>
+            </label>
+            <br><br><br>
+            <button class="submit" type="btn">Iniciar Sesión</button>
+           <p class="forgot-pass">Olvido su Contraseña?</p>
+        </form>
+        
   
-        <div class="social-media">
-          <ul>
-            <li><img src="../static/img/facebook.png"></li>
-            <li><img src="../static/img/twitter.png"></li>
-            <li><img src="../static/img/linkedin.png"></li>
-            <li><img src="../static/img/instagram.png"></li>
-          </ul>
-        </div>
+        
       </div>
 
       <div class="sub-cont">
@@ -59,6 +59,7 @@
         </div>
         <div class="form sign-up">
          <h2>Login de Administrador</h2>
+         <br><br>
         <label>
           <span>Email</span>
           <input type="email" name="email">
@@ -67,16 +68,10 @@
           <span>Contraseña</span>
           <input type="password" name="password">
         </label>
+        <br><br><br>
         <button class="submit" type="button">Iniciar Sesión</button>
         <p class="forgot-pass">Olvido su Contraseña?</p>
-        <div class="social-media">
-          <ul>
-            <li><img src="../static/img/facebook.png"></li>
-            <li><img src="../static/img/twitter.png"></li>
-            <li><img src="../static/img/linkedin.png"></li>
-            <li><img src="../static/img/instagram.png"></li>
-          </ul>
-        </div>
+        
         </div>
       </div>
     </div>

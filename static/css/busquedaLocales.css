@@ -3,21 +3,25 @@ table, th, td {
     border: 1px solid black;
     border-radius:2px;
 }
+
 th, td {
     padding: 15px;
     text-align: center;
 }
+
 /*table tr:nth-child(even) {
     background-color:rgb(241, 180, 147);
 }
 table tr:nth-child(odd) {
     background-color: rgb(243, 173, 160);
 }*/
+
 table th {
     color: white;
-    background-color: #2471A3;
+    background-color: #26b99a;
     font-family: 'Quicksand';
 }
+
 h1{
     text-align: center;
     font-weight: 700;
@@ -34,15 +38,16 @@ form{
     width: 100%;
     margin: auto;
 }
+
 .titulo{
     
 }
+
 form .group{
     position: relative;
     margin: 100px;
     background: black;
 }
-
 
 input{
     background: none;
@@ -53,7 +58,6 @@ input{
     width: 100%;
 }
 
-
 input:focus{
     outline: none;
     color: rgb(94,93,93);
@@ -62,7 +66,7 @@ input:focus{
 input:focus~label{
     top :-14px;
     font-size: 10px;
-    color: #2196f3;
+    color: #26b99a;
 }
 
 .boton{
@@ -74,6 +78,7 @@ input:focus~label{
 .redondeado {
     border-radius: 5px;
 }
+
 .confondo {
 background-color: #def;
 }
@@ -91,7 +96,7 @@ border: 1px solid transparent;
 
 .reserva-button a:hover {
 background-color: transparent;
-border: 1px solid #2471A3;
+border: 1px solid #26b99a;
 -moz-transition: all 0.2s linear;
 -o-transition: all 0.2s linear;
 -webkit-transition: all 0.2s linear;
@@ -101,8 +106,11 @@ border: 1px solid #2471A3;
     width: 10%;
     justify-content: center;
 }
+
 #logo2{
     display: none;
+    vertical-align: baseline;
+
 }
 
 @media (max-width: 850px){
