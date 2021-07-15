@@ -19,7 +19,6 @@
         <link rel="stylesheet" href="{% static 'css/templatemo-style.css' %}">
         <link rel="stylesheet" href="{% static 'css/busquedaLocales.css' %}">
 
-
         <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
         <script src="{% static 'js/vendor/modernizr-2.8.3-respond-1.4.2.min.js' %}"></script>
@@ -48,9 +47,8 @@
                 <!--<li><a href="#0"><div class="image-icon"><img src="../static/img/projects-icon.png"></div><h6></h6></a></li> -->
               </ul>
               <div class="primary-button" >
-									
-                <a href="accounts/loginUsuario" style="margin: 30px">Inicio Sesión</a>
-                <a href="accounts/registroUsuario" style="margin: 30px">Registrar</a>
+					<li style="color: white ;">Bienvenido ,{{nombreUsuario}}</li>
+					<a href="/accounts/logout">Logout</a>
               </div>
             </nav> 
           </div> <!-- .cd-slider-nav -->

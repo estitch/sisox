@@ -6,7 +6,6 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="../static/css/style.css">
-  <link href="{% static 'https://fonts.googleapis.com/css?family=Nunito:400,600,700,800&display=swap' %}" rel="stylesheet">
 </head>
 <body>
 
@@ -19,7 +18,7 @@
   <section class="top-part">
     <div class="cont">
       <div class="form sign-in">
-        <form action="logeoCliente" method="POST">
+        <form action="loginUsuario" method="POST">
           <i class="fa fa-window-close "></i>
            <h2>Iniciar Sesión Cliente</h2>
             <br><br>
@@ -27,6 +26,11 @@
               {%csrf_token%}
               <span>Nombre de Usuario</span>
               <input type="text" name="username" required>
+            </label>
+            <label>
+              {% csrf_token %}
+              <span>Email</span>
+              <input type="email"  name="email" requiered>
             </label>
             <label>
               {%csrf_token%}

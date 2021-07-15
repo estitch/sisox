@@ -164,9 +164,9 @@ button{
   position: absolute;
   right: 0;
   top: 0;
-  width: 900px;
+  width: 600px;
   height: 100%;
-  background-image: url(../img/bg.jpg);
+  background-image: url(../img/abrazo.jpg);
   background-size: cover;
   transition: -webkit-transform 1.2s ease-in-out;
   transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
