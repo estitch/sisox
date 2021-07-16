@@ -91,7 +91,7 @@ input{
 button{
   display: block;
   margin: 0 auto;
-  width: 260px;
+  width: 160px;
   height: 36px;
   border-radius: 30px;
   color: #fff;
@@ -105,7 +105,7 @@ button{
   text-transform: uppercase;
   font-weight: 600;
   font-family: 'Nunito', sans-serif;
-  background: -webkit-linear-gradient(left, #01244c, #2979FF);
+  background: -webkit-linear-gradient(left, #01244c, #713a1f);
 }
 
 .submit:hover{
@@ -160,7 +160,26 @@ button{
   transition: transform 1.2s ease-in-out;
 }
 
+.sub-cont2{
+  overflow: hidden;
+  position: absolute;
+  left: 500px;
+  top: 0;
+  width: 900px;
+  height: 100%;
+  padding-left: 260px;
+  background: #fff;
+  -webkit-transition: -webkit-transform 1.2s ease-in-out;
+  transition: -webkit-transform 1.2s ease-in-out;
+  transition: transform 1.2s ease-in-out;
+}
+
 .cont.s-signup .sub-cont{
+  -webkit-transform:translate3d(-640px, 0, 0);
+          transform:translate3d(-640px, 0, 0);
+}
+
+.cont.s-signup .sub-cont2{
   -webkit-transform:translate3d(-640px, 0, 0);
           transform:translate3d(-640px, 0, 0);
 }
@@ -169,6 +188,12 @@ button{
   -webkit-transform:translate3d(-640px, 0, 0);
           transform:translate3d(-640px, 0, 0);
 }
+
+.cont2.s-signup .sub-cont2{
+  -webkit-transform:translate3d(-640px, 0, 0);
+          transform:translate3d(-640px, 0, 0);
+}
+
 
 .img{
   overflow: hidden;
@@ -201,8 +226,44 @@ button{
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.3);
+  background: rgba(0,0,0,0.5);
 }
+
+.img2{
+  overflow: hidden;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 400px;
+  height: 100%;
+  padding-top: 360px;
+}
+
+.img2:before{
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 720px;
+  height: 100%;
+  background-image: url(../img/venci2.jpg);
+  background-size: cover;
+  transition: -webkit-transform 1.2s ease-in-out;
+  transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
+}
+
+.img2:after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+
 
 .cont.s-signup .img:before{
   -webkit-transform:translate3d(640px, 0, 0);

@@ -8,7 +8,6 @@
   <link rel="stylesheet" type="text/css" href="../static/css/style.css">
 </head>
 <body>
-
   <header class="header content">
     <div class="header-video">
       <div class="overlay"></div>
@@ -17,55 +16,75 @@
   </header>
 
   
-  <section class="top-part">
-    <div class="cont">
-      <div class="form sign-in" >
-          <form action="registroUsuario" method="POST" style="width: 490px;">
-            <h2>¡Bienvenido! Registrarse</h2>
-            
-              <label >
-                {%csrf_token%}
-              <input type="text" placeholder="Nombre y Apellido" name="first_name" requiered>
-              </label>
-              <label>
-                {% csrf_token %}
-                <input type="text" placeholder="Nombre de Usuario" name="username" requiered>
-              </label>
-              <label>
-                {% csrf_token %}
-                <input type="tel" name="telefono" placeholder="Número Telefono" required>
-              </label>
-              <label>
-                {% csrf_token %}
-                <input type="email"  placeholder="Email" name="email" requiered>
-              </label>
-              
-              <label>
-                {% csrf_token %}
-                <input type="password"  placeholder="Contraseña" name="password1Cliente" requiered>
-              
-                {% csrf_token %}
-                <input type="password"  placeholder="Confirmar Contraseña" name="password2Cliente" requiered>
-              </label>
-              <label>
-                {% csrf_token %}
-                  ¿Tiene Planta de Oxígeno?<input type="checkbox" name="planta" > 
-              </label>
-              <button class="submit" type="btn">Registrarse</button>
-          </form>
-       
-        
-      
-      </div>
   
-      <div class="sub-cont" style="left: 540px;">
-        <div class="img">
-        
+  <div class="cont2">
+    <div class="form sign-in" class="img">
+        <form action="registroUsuario" method="POST" style="width: 450px;">
+          <h2>Regístrate Aquí</h2>
+          <div class="textbox">
+            <label >
+              {%csrf_token%}
+            <input type="text" placeholder="Nombre y Apellido" name="first_name" requiered>
+            </label>
+            
+          </div>
+            <label>
+              {% csrf_token %}
+              <input type="text" placeholder="Nombre de Usuario" name="username" requiered>
+            </label>
+            <label>
+              {% csrf_token %}
+              <input type="tel" name="telefono" placeholder="Número Telefono" required>
+            </label>
+            <label>
+              {% csrf_token %}
+              <input type="email"  placeholder="Email" name="email" requiered>
+            </label>
+            
+            <label>
+              {% csrf_token %}
+              <input type="password"  placeholder="Contraseña" name="password1Cliente" requiered>
+            </label>
+            <label>
+              {% csrf_token %}
+              <input type="password"  placeholder="Confirmar Contraseña" name="password2Cliente" requiered>
+            </label>
+            <div style="text-align: center;padding-left: 110px;padding-top: 25px;padding-bottom: 10px;">
+              <table class="default">
+                <tr>
+                  <td>
+                    <label style="width: 20px; margin-top: 0px;"> 
+                      {% csrf_token %} <input type="checkbox" name="planta"></label>
+                  </td>
+                  <td>¿Tiene Planta de Oxígeno?</td>
+                </tr>
+              </table>
+            </div>
+
+
+            <div style="text-align: center;padding-top: 10px; padding-bottom: 10px;">
+              <table class="default">
+                <tr>
+                  <td>
+                    <button class="submit" type="btn" style="margin-left: 50px;margin-right: 30px;margin-top: 0px;">Registrarse</button>
+                  </td>
+                  <td><button class="submit" type="btn" style="margin-top: 0px;"><a href="../" style="color: white; text-decoration: none;">Cancelar</a> </button></td>
+                </tr>
+              </table>
+            </div>
+        </form>    
+    </div>
+
+    <div class="sub-cont2">
+      <div class="img2">
+        <div class="img-text m-up" style="top: 420px;">
+          <p style="color:#ffffff; font-size:17px" >¿Ya tienes una cuenta?</p>
+        </div>
+        <div class="img-btn" style="margin-top: 90px;">
+          <span class="m-up" style="padding-top: 3px;"><a href="#" style="color: white; text-decoration: none;">Iniciar Sesión</a></span>
         </div>
       </div>
     </div>
-  </section>
-  
-<script type="text/javascript" src="../static/js/script.js"></script>
+  </div>
 </body>
 </html>

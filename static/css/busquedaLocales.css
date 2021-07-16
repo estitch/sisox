@@ -18,7 +18,7 @@ table tr:nth-child(odd) {
 
 table th {
     color: white;
-    background-color: #26b99a;
+    background-color: #01244c;
     font-family: 'Quicksand';
 }
 
@@ -66,7 +66,7 @@ input:focus{
 input:focus~label{
     top :-14px;
     font-size: 10px;
-    color: #26b99a;
+    color: #01244c;
 }
 
 .boton{
@@ -96,7 +96,7 @@ border: 1px solid transparent;
 
 .reserva-button:hover {
 background-color: transparent;
-border: 1px solid #26b99a;
+border: 1px solid #01244c;
 -moz-transition: all 0.2s linear;
 -o-transition: all 0.2s linear;
 -webkit-transition: all 0.2s linear;

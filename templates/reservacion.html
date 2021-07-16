@@ -1,0 +1,100 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Iniciar Sesión</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+</head>
+<body>
+
+  <header class="header content">
+    <div class="header-video">
+      <div class="overlay"></div>
+      <video src="../static/videos/video.mp4" autoplay loop></video>
+    </div>
+    
+  </header>
+  
+  <section class="top-part">
+    <div class="cont">
+      <div class="form sign-in">
+        <form action="" method="POST" style="width: 490px;">
+          <h2>Recarga de Oxigeno</h2>
+            <table>
+              <th>
+                <label>
+                  {%csrf_token%}
+                  <input type="text" name="first_name" placeholder="Nombres Completos" required>
+                </label>
+              </th>
+              <th>
+                <label>
+                  {% csrf_token %}
+                  <input type="text"  name="dni" placeholder="N° DNI" requiered>
+                </label>
+              </th>
+            </table>
+            
+            
+            <table>
+              <th>
+                <label>
+                  {%csrf_token%}
+                  <input type="text" name="distrito" placeholder="Distrito" required>
+                </label>
+              </th>
+              <th>
+                <label>
+                  {%csrf_token%}
+                  <input type="Distrito" name="departamento"  placeholder="Departamento" required>
+                </label>
+              </th>
+            </table>
+            
+            
+                <label>
+                  {%csrf_token%}
+                  <input type="datetime-local" name="fecha" min="2018-03-25" max="2018-05-25" step="2" placeholder="fecha" />
+                </label>
+              
+                <label>
+                  {%csrf_token%}
+                  Sube la autorización médica:
+                    <input type="file" name="archivosubido">
+                </label>
+            <br><br>
+            <div style="text-align: center;padding-top: 10px; padding-bottom: 10px;">
+              <table class="default">
+                <tr>
+                  <td>
+                    <button class="submit" type="btn" style="margin-left: 70px;margin-right: 0px;margin-top: 0px;margin-bottom: 0px;">Reservación</button>
+                  </td>
+                  <td>
+                    <button class="submit" type="btn" style="margin-left: 25px;margin-right: 20px;margin-top: 0px;margin-bottom: 0px;">
+                    <a href="#" style="color: rgb(255, 255, 255); text-decoration: none;">Cancelar</a> 
+                    </button>
+                </td>
+                </tr>
+              </table>
+            </div>
+           <p class="forgot-pass">¿Olvidó su Contraseña?</p>
+        </form>
+        
+  
+        
+      </div>
+
+      <div class="sub-cont" style="left: 540px;">
+        <div class="img">
+          <div class="img-text m-up" style="top: 390px;">
+            
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

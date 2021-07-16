@@ -18,7 +18,8 @@
         <link rel="stylesheet" href="{% static 'css/fontAwesome.css' %}">
         <link rel="stylesheet" href="{% static 'css/templatemo-style.css' %}">
         <link rel="stylesheet" href="{% static 'css/busquedaLocales.css' %}">
-
+        <link rel="stylesheet" href="{% static 'css/noticias.css' %}">
+        
         <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
         <script src="{% static 'js/vendor/modernizr-2.8.3-respond-1.4.2.min.js' %}"></script>
@@ -41,13 +42,13 @@
               <img id="logo2" src="../static/img/LogoPrincipal (1).png" style="left: 20%;">
               <ul>
                 <li class="selected"><a href="#0"><div class="image-icon"><img src="../static/img/home-icon.png"></div><h6>Principal</h6></a></li>
-                <li><a href="#0"><div class="image-icon"><img src="../static/img/about-icon.png"></div><h6>Busqueda <br>de locales</h6></a></li>
+                <li><a href="#0"><div class="image-icon"><img src="../static/img/about-icon.png"></div><h6>Plantas de <br>Oxigeno</h6></a></li>
                 <li><a href="#0"><div class="image-icon"><img src="../static/img/featured-icon.png"></div><h6>Comparación <br>de locales</h6></a></li>
                 <li><a href="#0"><div class="image-icon"><img src="../static/img/contact-icon.png"></div><h6>Contáctanos</h6></a></li>
                 <!--<li><a href="#0"><div class="image-icon"><img src="../static/img/projects-icon.png"></div><h6></h6></a></li> -->
               </ul>
               <div class="primary-button" >
-					<li style="color: white ;">Bienvenido ,{{nombreUsuario}}</li>
+					<h1 style="color: white ;">Bienvenido ,{{nombreUsuario}}</h1>
 					<a href="/accounts/logout">Logout</a>
               </div>
             </nav> 
@@ -65,14 +66,101 @@
                   <div class="row">
                     <div class="col-md-12">
                       <div class="content first-content">
-                        <h4>About Newline Template</h4>
-                        <p>Newline is free CSS template provided by templatemo site. Credits go to <a href="https://videos.pexels.com/videos/busy-street-in-the-city-1089" target="_blank">Pexels.com</a> for a video background and <a href="https://unsplash.com" target="_blank">Unsplash</a> for images. Please support templatemo by spreading a word. Thank you. If you have any question, feel free to contact us on Facebook page. Quisque dictum convallis mi. In dapibus auctor dictum donec mattis quis eros ultricies feugiat.</p>
+                        <h4> Noticias sobre el COVID-19</h4>
+                        <p>En esta seccion se podra ver todas las noticias dadas sobre el tema del COVID-19, como vacunaciones,
+                           noticias nuevas del Gobierno, estados de alerta de diferentes ciudades y regiones. Las noticias importantes
+                           se actualizaran constantemente y tendran una valoracion buena para todos los usuarios de este perfil.
+                        </p>
                         <div class="primary-button">
-                          <a href="#">Discover More</a>
+                          <a href="#">Actualizaciones</a>
                         </div>
                       </div>
                     </div>
-                  </div>                  
+                  </div> 
+                  <div class="blog-card">
+                    <div class="meta">
+                      <div class="photo"><img src="https://cdn.www.gob.pe/uploads/document/file/2015262/standard_Personas%20viviendo%20con%20VIH%20reciben%20segunda%20dosis%20de%20vacuna%20contra%20la%20COVID-19.jpeg"></div>
+              
+                    </div>
+                    <div class="description">
+                      <h1>COVID-19: este es el cronograma de vacunación para personas de 12 años a más en el Perú</h1>
+                      <h2>Diario: Gestion - Peru</h2>
+                      <p> El Ministerio de Salud (Minsa) reveló el cronograma de vacunación contra el coronavirus por grupo etario hasta fin de año. En conferencia de prensa, el titular de Salud, Óscar Ugarte,
+                        detalló qué grupos etarios se vacunarán en los próximos meses, entre ellos, las personas de 12 a 39 años.</p>
+                      <p class="read-more">
+                        <a href="#">Leer Mas</a>
+                      </p>
+                    </div>
+                  </div> 
+                  <div class="blog-card alt">
+                    <div class="meta">
+                      <div class="photo"><img src="https://portal.andina.pe/EDPmedia/fotografia/2021/01/25/53005_Webp.net-resizeimage%20(21).jpg"></div>
+                      <ul class="details">
+                        
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="description">
+                      <h1>COVID-19: Minsa afirma que 90% de denuncias de suplantación de identidad durante vacunación ya fueron atendidase</h1>
+                      <h2>Diario: El Comercio Peru</h2>
+                      <p>El viceministro de Salud Pública, Gustavo Rosell, informó que el Ministerio de Salud (Minsa) atendió a la fecha unas 100 denuncias de suplantación de identidad en el proceso de vacunación contra el COVID-19 que se desarrolla en el país.</p>
+                      <p class="read-more">
+                        <a href="#">Leer Mas</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="blog-card">
+                    <div class="meta">
+                      <div class="photo"><img src="https://montevideonight.com/images/noticias/290321235340_qHWAzx7UnU82TehtWTNdKM-480-80.jpg"></div>
+                      <ul class="details">
+                        <li class="author"><a href="#">John Doe</a></li>
+                        <li class="date">Aug. 24, 2015</li>
+                        <li class="tags">
+                          <ul>
+                            <li><a href="#">Learn</a></li>
+                            <li><a href="#">Code</a></li>
+                            <li><a href="#">HTML</a></li>
+                            <li><a href="#">CSS</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="description">
+                      <h1>Coronavirus: las dudas sobre la eficacia de las vacunas chinas (y cómo se explica el aumento de casos en países que las utilizan)</h1>
+                      <h2>Diario: BBC</h2>
+                      <p>Las dos principales vacunas chinas contra la covid-19 han estado en medio de algunas noticias negativas recientemente: aumento de las infecciones e incluso algunas muertes entre las poblaciones vacunadas con Sinovac y Sinopharm.
+                        </p>
+                      <p class="read-more">
+                        <a href="#">Leer Mas</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="blog-card alt">
+                    <div class="meta">
+                      <div class="photo"><img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/other/1800x1200_virus_3d_render_red_03_other.jpg?resize=*:350px"></div>
+                      <ul class="details">
+                        <li class="author"><a href="#">Jane Doe</a></li>
+                        <li class="date">July. 15, 2015</li>
+                        <li class="tags">
+                          <ul>
+                            <li><a href="#">Learn</a></li>
+                            <li><a href="#">Code</a></li>
+                            <li><a href="#">JavaScript</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="description">
+                      <h1>Vacunatón para adultos de 45 y 46 años: fecha, hora y lugar de la segunda jornada de vacunación</h1>
+                      <h2>Diario: Gestion Peru</h2>
+                      <p>Según el Ministerio de Salud (Minsa), en la primera Vacunatón se logró aplicar 239,439 dosis de la vacuna contra el COVID-19, superando la meta de 200,000 dosis que se habían propuesto las autoridades sanitarias en el país.</p>
+                      <p class="read-more">
+                        <a href="#">Leer Mas</a>
+                      </p>
+                    </div>
+                  </div>
+
+                
                 </div>
               </div>
             </li>
@@ -88,61 +176,65 @@
                   <div class="row">
                     <div class="col-md-12">
                       <div class="content second-content">
-                        <center>
-                          <table>
-                            <caption></caption>
-                            <thead>
-                              <tr>
-                                <th colspan="2">Empresa</th>
-                                <th>Departamento</th>
-                                <th>Distrito</th>
-                                <th></th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td class="imagen"><img src="../static/img/oxyman.gif"></td>
-                                <td>Oxyman</td>
-                                <td>Arequipa</td>
-                                <td>Characato</td>
-                                <td>
-                                  <div class="reserva-button">
-                                    <a href="#">Reservación</a>
-                                    <a href="#">Detalles</a>
-                                  </div>
-                                </td>
-                              </tr>
+                        <div class="row">
+                          <div class="col-md-11 left-image">
+                            <center>
+                              <table>
+                                <caption></caption>
+                                <thead>
+                                  <tr>
+                                    <th colspan="2">Empresa</th>
+                                    <th>Departamento</th>
+                                    <th>Distrito</th>
+                                    <th></th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td class="imagen"><img src="../static/img/oxyman.gif"></td>
+                                    <td>Oxyman</td>
+                                    <td>Arequipa</td>
+                                    <td>Characato</td>
+                                    <td>
+                                      <div>
+                                        <a href="reservacion" style="margin: 20px" class="reserva-button">Reservación</a>
+                                        <a href="#" class="reserva-button">Detalles</a>
+                                      </div>
+                                    </td>
+                                  </tr>
 
-                              <tr>
-                                <td class="imagen"><img src="../static/img/LOGO_UNSA.png"></td>
-                                <td>UNSA</td>
-                                <td>Arequipa</td>
-                                <td>Zamácola</td>
-                                <td>
-                                  <div class="reserva-button">
-                                    <a href="#">Reservación</a>
-                                    <a href="#">Detalles</a>
-                                  </div>
-                                </td>
-                              </tr>
+                                  <tr>
+                                    <td class="imagen"><img src="../static/img/LOGO_UNSA.png"></td>
+                                    <td>UNSA</td>
+                                    <td>Arequipa</td>
+                                    <td>Zamácola</td>
+                                    <td>
+                                      <div>
+                                        <a style="margin: 20px" class="reserva-button">Reservación</a>
+                                        <a href="#" class="reserva-button">Detalles</a>
+                                      </div>
+                                    </td>
+                                  </tr>
 
-                              <tr>
-                                <td class="imagen"><img src="../static/img/Oxigeno PSA.jpg"></td>
-                                <td>Oxigeno PSA</td>
-                                <td>Arequipa</td>
-                                <td>Cayma</td>
-                                <td>
-                                  <div class="reserva-button">
-                                    <a href="#">Reservación</a>
-                                    <a href="#">Detalles</a>
-                                  </div>
-                                </td>
-                              </tr>
-                            </tbody>
-                            <br><br>
-                          </table>
-                        </center>    
-                        <br><br>
+                                  <tr>
+                                    <td class="imagen"><img src="../static/img/Oxigeno PSA.jpg"></td>
+                                    <td>Oxigeno PSA</td>
+                                    <td>Arequipa</td>
+                                    <td>Cayma</td>
+                                    <td>
+                                      <div>
+                                        <button style="margin: 20px" class="reserva-button">Reservación</button>
+                                        <a href="#" class="reserva-button">Detalles</a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                                <br><br>
+                              </table>
+                            </center> 
+                          </div>
+                        </div>   
+                       
                     </div>
                   </div>                  
                 </div>
@@ -161,26 +253,60 @@
                     <div class="col-md-12">
                       <div class="content third-content">
                         <div class="row">
-                          <div class="col-md-7 left-image">
-                            <img src="../static/img/left-feature-image.png">
-                          </div>
-                          <div class="col-md-5">
-                            <div class="right-feature-text">
-                              <h4>Featured Product: <em>Newline</em></h4>
-                              <p>Lorem ipsum dolor amet, consecte adipiscing elit, quisque dictum convallis mi. In dapibus auctor dictum donec mattis quis eros ultricies feugiat. Morbi congue faucibus mi, ague blandit curabitur ac lacinia.</p>
-                              <div class="feature-list">
-                                <ul>
-                                  <p>- Suspendisse mattis finibus sem</p>
-                                  <p>- Pellentesque et urna vel lectus</p>
-                                  <p>- Vestibulum iaculis nisi dui</p>
-                                  <p>- Donec sagittis eros , ac tempus ligula</p>
-                                  <p>- Integer sapien risus, auctor</p>
-                                </ul>
-                              </div>
-                              <div class="primary-button">
-                                <a href="#">Discover More</a>
-                              </div>
-                            </div>
+                          <div class="col-md-12 left-image">
+                            <center>
+                              <table>
+                                <caption></caption>
+                                <thead>
+                                  <tr>
+                                    <th colspan="2">Empresa</th>
+                                    <th>Departamento</th>
+                                    <th>Distrito</th>
+                                    <th>Selecciones para Comparar</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td class="imagen"><img src="../static/img/oxyman.gif"></td>
+                                    <td>Oxyman</td>
+                                    <td>Arequipa</td>
+                                    <td>Characato</td>
+                                    <td>
+                                      <div>
+                                        <input type="checkbox" style="width: 60%;">
+                                      </div>
+                                    </td>
+                                  </tr>
+    
+                                  <tr>
+                                    <td class="imagen"><img src="../static/img/LOGO_UNSA.png"></td>
+                                    <td>UNSA</td>
+                                    <td>Arequipa</td>
+                                    <td>Zamácola</td>
+                                    <td>
+                                      <div>
+                                        <input type="checkbox" style="width: 60%;">
+                                      </div>
+                                    </td>
+                                  </tr>
+    
+                                  <tr>
+                                    <td class="imagen"><img src="../static/img/Oxigeno PSA.jpg"></td>
+                                    <td>Oxigeno PSA</td>
+                                    <td>Arequipa</td>
+                                    <td>Cayma</td>
+                                    <td>
+                                      <div>
+                                        <input type="checkbox" style="width: 60%;">
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                                <br><br>
+                              </table>
+                              <br><br>
+                              <button style="margin: 20px" class="reserva-button"> <a href="#" style="color: white; text-decoration: none;"> <h5>Comparar</h5> </a> </button>
+                            </center>
                           </div>
                         </div>
                       </div>
@@ -202,30 +328,9 @@
                     <div class="col-md-12">
                       <div class="content fourth-content">
                         <div class="row">
-                          <div class="col-md-3 project-item">
-                            <a href="../static/img/item-01.jpg" data-lightbox="image-1"><img src="../static/img/project-item-02.jpg"></a>
-                          </div>
-                          <div class="col-md-3 project-item">
-                            <a href="../static/img/item-02.jpg" data-lightbox="image-1"><img src="../static/img/project-item-02.jpg"></a>
-                          </div>
-                          <div class="col-md-3 project-item">
-                            <a href="../static/img/item-03.jpg" data-lightbox="image-1"><img src="../static/img/project-item-03.jpg"></a>
-                          </div>
-                          <div class="col-md-3 project-item">
-                            <a href="../static/img/item-04.jpg" data-lightbox="image-1"><img src="../static/img/project-item-04.jpg"></a>
-                          </div>
-                          <div class="col-md-3 project-item">
-                            <a href="../static/img/item-05.jpg" data-lightbox="image-1"><img src="../static/img/project-item-05.jpg"></a>
-                          </div>
-                          <div class="col-md-3 project-item">
-                            <a href="../static/img/item-06.jpg" data-lightbox="image-1"><img src="../static/img/project-item-06.jpg"></a>
-                          </div>
-                          <div class="col-md-3 project-item">
-                            <a href="../static/img/item-07.jpg" data-lightbox="image-1"><img src="../static/img/project-item-07.jpg"></a>
-                          </div>
-                          <div class="col-md-3 project-item">
-                            <a href="../static/img/item-08.jpg" data-lightbox="image-1"><img src="../static/img/project-item-08.jpg"></a>
-                          </div>
+                          <h3>Si deseas contactarnos presiona en el siguiente botón y llenea el formulario</h3><br>
+                          <div class="primary-button">
+                           <a href="contactanos">Contactanos</a>
                         </div>
                       </div>
                     </div>

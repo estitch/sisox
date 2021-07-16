@@ -77,3 +77,17 @@ def actualizarEmpresa(request):
         data.password=request.POST['password1Cliente']
         data.save()
     return render(request,'indexEmpresa.html',{'data':data})
+
+
+
+def contactanos(request):
+    return render(request,"contactanos.html",{})
+
+def usuarioCliente(request):
+    return render(request,"indexUsuario.html",{})
+
+def reservacion(request):
+    return render(request,"reservacion.html",{})
+
+def contactanos1(request):
+    return render(request,"contactanos.html",{})

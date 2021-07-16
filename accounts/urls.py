@@ -4,7 +4,9 @@ from . import views
 urlpatterns =[
     path("registroUsuario",views.registroUsuario,name ="registroUsuario"),
     path("loginUsuario",views.loginUsuario,name ="loginUsuario"),
-    #path("loginUsuario",indexCliente.html,name ="loginUsuario"),
+    path("contactanos",views.contactanos,name ="contactanos"),
+    path("contactanos1",views.contactanos1,name ="contactanos1"),
+    path("reservacion",views.reservacion,name ="reservacion"),
     path("logout",views.logout,name ="logout"),
     path("actualizarEmpresa",views.actualizarEmpresa,name ="actualizarEmpresa"),
     ]

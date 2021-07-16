@@ -66,7 +66,8 @@
                     <div class="col-md-12">
                       <div class="content first-content">
 
-                        <h1 class="titulo">Listar Destinos</h1>
+                        <h1 class="titulo">PERFIL</h1>
+
                         <table>
                           <tr>
                             <th>ID</th>
@@ -74,21 +75,17 @@
                             <th>Imagen</th>
                             <th>Precio</th>
                             <th>Oferta</th>
-                        </tr>
-                        {%for a in destinos%}
-                        <tr>
-                            <td>{{a.id}}</td>
-                            <td>{{ a.nombres }}</td>
-                            <td><a href="">Eliminar</a></li>
-                        </tr>
-                        {%endfor%}
-                    </table>
+                          </tr>
+                          {% for a in destinos %}
+                            <tr>
+                              <td>{{a.id}}</td>
+                              <td>{{ a.nombres }}</td>
+                              <td>{{ a.usuario }}</td>
+                              <td><a href="">Eliminar</a></li>
+                            </tr>
+                          {%endfor%}
+                        </table>
 
-                    <ul class="color">
-                      <li><a href=>Insertar</a></li>
-                      <li><a href=>Listar</a></li>
-                      <li><a href=>Modificar</a></li>
-                      </ul>
 
                         
                       </div>
