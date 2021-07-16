@@ -5,5 +5,6 @@ urlpatterns =[
     path("registroUsuario",views.registroUsuario,name ="registroUsuario"),
     path("loginUsuario",views.loginUsuario,name ="loginUsuario"),
     #path("loginUsuario",indexCliente.html,name ="loginUsuario"),
-    path("logout",views.logout,name ="logout")
+    path("logout",views.logout,name ="logout"),
+    path("actualizarEmpresa",views.actualizarEmpresa,name ="actualizarEmpresa"),
     ]

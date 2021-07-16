@@ -47,7 +47,7 @@ video::-webkit-media-controls {
 
 .primary-button a {
   display: inline-block;
-  background-color: #26b99a;
+  background-color: #01244c;
   color: #f0e3e3;
   font-size: 25px;
   padding: 12px 18px;
@@ -164,7 +164,7 @@ video::-webkit-media-controls {
   text-align: center;
   margin: 0px;
   padding: 0px;
-  background-color: #26b99a;
+  background-color: #2979FF;
 }
 
 .cd-slider-nav .image-icon:hover {
@@ -178,7 +178,7 @@ video::-webkit-media-controls {
   margin-bottom: 100px;
   margin-top: -80px;
   background-color: #fff;
-  border-top: 15px solid #26b99a;
+  border-top: 15px solid #01244c;
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -283,7 +283,7 @@ video::-webkit-media-controls {
 .second-slide .heading span {
   font-size: 16px;
   text-transform: uppercase;
-  color: #26b99a;
+  color: #01244c;
   font-weight: 300;
   letter-spacing: 0.5px;
 }
@@ -365,7 +365,7 @@ video::-webkit-media-controls {
 .third-slide .heading span {
   font-size: 16px;
   text-transform: uppercase;
-  color: #26b99a;
+  color: #01244c;
   font-weight: 300;
   letter-spacing: 0.5px;
 }
@@ -400,7 +400,7 @@ video::-webkit-media-controls {
 .third-content .right-feature-text h4 em {
   font-style: normal;
   font-weight: 700;
-  color: #26b99a;
+  color: #01244c;
 }
 
 .third-content .feature-list {
@@ -445,7 +445,7 @@ video::-webkit-media-controls {
 .fourth-slide .heading span {
   font-size: 16px;
   text-transform: uppercase;
-  color: #26b99a;
+  color: #01244c;
   font-weight: 300;
   letter-spacing: 0.5px;
 }
@@ -488,7 +488,7 @@ video::-webkit-media-controls {
 .fivth-slide .heading span {
   font-size: 16px;
   text-transform: uppercase;
-  color: #26b99a;
+  color: #01244c;
   font-weight: 300;
   letter-spacing: 0.5px;
 }
@@ -525,7 +525,7 @@ video::-webkit-media-controls {
 }
 
 .fivth-content .left-info i:hover {
-  background-color: #26b99a;
+  background-color: #01244c;
   -moz-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   -webkit-transition: all 0.3s linear;
@@ -578,7 +578,7 @@ video::-webkit-media-controls {
 .fivth-content button {
   display: inline-block;
   background-color: #26b99a;
-  color: #343434;
+  color: #01244c;
   font-size: 13px;
   padding: 12px 18px;
   border-radius: 3px;
@@ -604,7 +604,7 @@ video::-webkit-media-controls {
 */
 
 footer {
-  background-color:#26b99a ;
+  background-color:#01244c ;
   position: relative;
   width: 100%;
   bottom: 0;
@@ -667,7 +667,7 @@ footer a {
   }
 
   .cd-slider-nav {
-    background-color: #26b99a;
+    background-color: #01244c;
     width: 100%;
     height: 80px;
     line-height: 80px;

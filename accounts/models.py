@@ -19,7 +19,6 @@ class Usuarios(models.Model):
 
 class Empresa(models.Model):
     id=models.AutoField(primary_key=True)
-    dni=models.IntegerField(null=True, blank=True)
     nombres = models.CharField(max_length=75,null=False, blank=False)
     usuario = models.CharField(max_length=75,null=False, blank=False)
     telefono = models.CharField(max_length=75,null=False, blank=False)

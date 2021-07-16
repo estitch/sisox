@@ -14,7 +14,6 @@ class Migration(migrations.Migration):
             name='Empresa',
             fields=[
                 ('id', models.AutoField(primary_key=True, serialize=False)),
-                ('dni', models.IntegerField(blank=True, null=True)),
                 ('nombres', models.CharField(max_length=75)),
                 ('usuario', models.CharField(max_length=75)),
                 ('telefono', models.CharField(max_length=75)),

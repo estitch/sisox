@@ -83,7 +83,7 @@ input:focus~label{
 background-color: #def;
 }
 
-.reserva-button a {
+.reserva-button{
 display: inline-block;
 background-color: #050607;
 color: #f0e3e3;
@@ -94,12 +94,30 @@ text-decoration: none;
 border: 1px solid transparent;
 }
 
-.reserva-button a:hover {
+.reserva-button:hover {
 background-color: transparent;
 border: 1px solid #26b99a;
 -moz-transition: all 0.2s linear;
 -o-transition: all 0.2s linear;
 -webkit-transition: all 0.2s linear;
+}
+
+.reserva-button:disabled,
+.reserva-button[disabled]{
+    border: 1px solid black;
+    background-color: #cccccc;
+    color: #666666;
+}
+
+.desabilitado{
+    display: inline-block;
+    background-color:rgb(179, 178, 178);
+    color: black;
+    font-size: 13px;
+    padding: 12px 14px;
+    border-radius: 2px;
+    text-decoration: none;
+    border: 1px solid transparent;
 }
 
 .imagen{

@@ -1,13 +1,12 @@
 from django.shortcuts import redirect, render
 from django.contrib.auth.models import User, auth
 from django.contrib import messages
-from .models import Usuarios
+from .models import Usuarios,Empresa
 
 
 def registroUsuario(request):
 
     if request.method == 'POST':
-        dni= 00000000
         nombres = request.POST['first_name']
         usuario = request.POST['username']
         telefono = request.POST['telefono']
@@ -21,7 +20,7 @@ def registroUsuario(request):
             tipo_usuario=False
 
         if password==repassword:
-            usuAdd = Usuarios.objects.create(dni=dni,nombres=nombres,usuario=usuario,telefono=telefono,tipo_usuario=tipo_usuario,password=password,email=email)  
+            usuAdd = Usuarios.objects.create(nombres=nombres,usuario=usuario,telefono=telefono,tipo_usuario=tipo_usuario,password=password,email=email)  
             usuAdd.save();
             print('usuario creado')
             usuarios= Usuarios.objects.all()
@@ -57,6 +56,24 @@ def logout(request):
     auth.logout(request)
     return redirect('index')
 
+def listar(request):
+    destinos = Usuarios.objects.all()
+    data ={
+        'destinos':destinos
+    }
+    return render(request,"indexEmpresa.html",data)
 
 # USUARIO EMPRESA
-
+def actualizarEmpresa(request):
+        
+    if request.method == 'POST':  
+        email = request.POST['email']
+        data=Usuarios.objects.get(email=email)
+        data=Usuarios.objects.all()
+        print(data)
+        data.nombres=request.POST['first_name']
+        data.usuario=request.POST['username']
+        data.telefono=request.POST['telefono']
+        data.password=request.POST['password1Cliente']
+        data.save()
+    return render(request,'indexEmpresa.html',{'data':data})

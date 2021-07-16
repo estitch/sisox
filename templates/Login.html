@@ -11,17 +11,18 @@
 
   <header class="header content">
     <div class="header-video">
+      <div class="overlay"></div>
       <video src="../static/videos/video.mp4" autoplay loop></video>
     </div>
+    
   </header>
   
   <section class="top-part">
     <div class="cont">
       <div class="form sign-in">
-        <form action="loginUsuario" method="POST">
-          <i class="fa fa-window-close "></i>
-           <h2>Iniciar Sesión Cliente</h2>
-            <br><br>
+        <form action="loginUsuario" method="POST" style="width: 490px;">
+           <h2>¡Bienvenido! Inicia Sesión</h2>
+            
             <label>
               {%csrf_token%}
               <span>Nombre de Usuario</span>
@@ -37,45 +38,17 @@
              <span>Contraseña</span>
               <input type="password" name="password" required>
             </label>
-            <br><br><br>
+            <br><br>
             <button class="submit" type="btn">Iniciar Sesión</button>
-           <p class="forgot-pass">Olvido su Contraseña?</p>
+           <p class="forgot-pass">¿Olvidó su Contraseña?</p>
         </form>
         
   
         
       </div>
 
-      <div class="sub-cont">
+      <div class="sub-cont" style="left: 540px;">
         <div class="img">
-          <div class="img-text m-up">
-            <h2>Usted es un administrador?</h2>
-            <p>Si usted desea logearse como administrador pulse aqui.</p>
-          </div>
-          <div class="img-text m-in">
-            <h2>Usted es un cliente?</h2>
-            <p>Si usted desea logearse como cliente pulse aqui.</p>
-          </div>
-          <div class="img-btn">
-            <span class="m-up">Iniciar Sesión</span>
-            <span class="m-in">Iniciar Sesión</span>
-          </div>
-        </div>
-        <div class="form sign-up">
-         <h2>Login de Administrador</h2>
-         <br><br>
-        <label>
-          <span>Email</span>
-          <input type="email" name="email">
-        </label>
-        <label>
-          <span>Contraseña</span>
-          <input type="password" name="password">
-        </label>
-        <br><br><br>
-        <button class="submit" type="button">Iniciar Sesión</button>
-        <p class="forgot-pass">Olvido su Contraseña?</p>
-        
         </div>
       </div>
     </div>
