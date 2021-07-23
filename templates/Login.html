@@ -21,7 +21,7 @@
     <div class="cont">
       <div class="form sign-in">
         <form action="loginUsuario" method="POST" style="width: 490px;">
-           <h2>¡Bienvenido! Inicia Sesión</h2>
+          <h2>¡Bienvenido! Inicia Sesión</h2>
             
             <label>
               {%csrf_token%}
@@ -35,7 +35,7 @@
             </label>
             <label>
               {%csrf_token%}
-             <span>Contraseña</span>
+            <span>Contraseña</span>
               <input type="password" name="password" required>
             </label>
             <br><br>
@@ -46,12 +46,15 @@
                   <td>
                     <button class="submit" type="btn" style="margin-left: 70px;margin-right: 0px;margin-top: 0px;margin-bottom: 0px;">Iniciar sesión</button>
                   </td>
-                  <td><button class="submit" type="btn" style="margin-left: 25px;margin-right: 20px;margin-top: 0px;margin-bottom: 0px;"><a href="../" style="color: white; text-decoration: none;">Cancelar</a></button></td>
+                  <td>
+                    <button class="submit" type="btn" style="margin-left: 25px;margin-right: 20px;margin-top: 0px;margin-bottom: 0px;">
+                      <a href="../" style="color: white; text-decoration: none;">Cancelar</a>
+                    </button>
+                  </td>
                 </tr>
               </table>
             </div>
-           <p class="forgot-pass">¿Olvidó su Contraseña?</p>
-           
+          <p class="forgot-pass">¿Olvidó su Contraseña?</p>
         </form>
 
       </div>
@@ -60,15 +63,13 @@
         <div class="img">
           <div class="img-text m-up" style="top: 390px;">
             <p style="color:#ffffff; font-size:17px" >¿No tienes ninguna cuenta?</p>
+            <a href="/accounts/registroUsuario" style="color: rgb(236, 235, 235); text-decoration: none;">Regístrate ahora </a>
           </div>
-          <div class="img-btn" style="margin-top: 80px;">
-            <span class="m-up" style="padding-top: 3px;">         
-                <a href="accounts/registroUsuario" style="color: rgb(196, 32, 32); text-decoration: none;">
-                  Regístrate ahora
-                </a>
+          <!--<div class="img-btn" style="margin-top: 80px;">
+            <span class="m-up" style="padding-top: 3px;">       
+              <a href="/accounts/registroUsuario" style="color: rgb(236, 235, 235); text-decoration: none;">Regístrate ahora </a>
             </span>
-
-          </div>
+          </div>-->
         </div>
       </div>
     </div>

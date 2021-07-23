@@ -5,7 +5,6 @@ from .models import Usuarios,Empresa
 
 
 def registroUsuario(request):
-
     if request.method == 'POST':
         nombres = request.POST['first_name']
         usuario = request.POST['username']
@@ -31,7 +30,8 @@ def registroUsuario(request):
                 return render(request,"indexCliente.html",{'nombreUsuario': usuario})
         else :
                 return render(request,"indexEmpresa.html",{'nombreUsuario': usuario})
-    return render(request, "Registro.html")
+    else:
+        return render(request, "Registro.html")
 
 def loginUsuario(request):
     if request.method =='POST':
