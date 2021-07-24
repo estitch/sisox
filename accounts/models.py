@@ -4,7 +4,6 @@ from django.db.models.expressions import Value
 from django.db.models.fields import CharField
 
 
-
 # Create your models here.
 class Usuarios(models.Model):
     id=models.AutoField(primary_key=True)
