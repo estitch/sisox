@@ -211,9 +211,9 @@ button{
   position: absolute;
   right: 0px;
   top: 0;
-  width: 600px;
+  width: 650px;
   height: 100%;
-  background-image: url(../img/abrazo.jpg);
+  background-image: url(../img/venci2.jpg);
   background-size: cover;
   transition: -webkit-transform 1.2s ease-in-out;
   transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;

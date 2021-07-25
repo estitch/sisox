@@ -1,7 +1,8 @@
 from django.shortcuts import redirect, render
 from django.contrib.auth.models import User, auth
 from django.contrib import messages
-from .models import Usuarios,Empresa
+#from .models import Usuarios,Empresa
+from .models import Ipress
 
 
 def registroUsuario(request):
