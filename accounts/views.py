@@ -33,6 +33,29 @@ def registroUsuario(request):
                 return render(request,"indexEmpresa.html",{'nombreUsuario': usuario})
     return render(request, "Registro.html")
 
+def registroAdministrador(request):
+
+    if request.method == 'POST':
+        nombres = request.POST['nameAdmi']
+        usuario = request.POST['usernameAdmi']
+        telefono = request.POST['telAdmi']
+        email = request.POST['correoAdmi']
+        tipo_usuario=request.POST.get('planta',False)
+        password=request.POST['password1Admi']
+        repassword=request.POST['password2Admi']
+        tipo_usuario=True
+
+        if password==repassword:
+            usuAdd = Empresa.objects.create(nombres=nombres,usuario=usuario,telefono=telefono,tipo_usuario=tipo_usuario,password=password,email=email)  
+            usuAdd.save();
+            print('usuario creado')
+            usuarios= Empresa.objects.all()
+        else:
+            print('password incorrecto')
+
+        return render(request,"indexEmpresa.html",{'nombreUsuario': usuario})
+    return render(request, "Registro.html")
+
 def loginUsuario(request):
     if request.method =='POST':
         

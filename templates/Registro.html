@@ -86,21 +86,29 @@
             <div class="textbox">
               <label >
                 {%csrf_token%}
-              <input type="text" placeholder="Nombres" name="nombres" requiered>
+              <input type="text" placeholder="Nombres" name="nameAdmi" requiered>
               </label>
               
             </div>
               <label>
                 {% csrf_token %}
-                <input type="text" placeholder="Apellido Paterno" name="apellidopaterno" requiered>
+                <input type="text" placeholder="Usuario" name="usernameAdmi" requiered>
               </label>
               <label>
                 {% csrf_token %}
-                <input type="text"  placeholder="Apellido Materno" name="apellidomaterno" requiered>
+                <input type="tel"  placeholder="Telefono" name="telAdmi" requiered>
               </label>
-	       <label>
+	            <label>
                 {% csrf_token %}
-                <input type="email"  placeholder="Correo" name="correo" requiered>
+                <input type="email"  placeholder="Correo" name="correoAdmi" requiered>
+              </label>
+              <label>
+                {% csrf_token %}
+                <input type="password"  placeholder="Password" name="password1Admi" requiered>
+              </label>
+              <label>
+                {% csrf_token %}
+                <input type="password"  placeholder="Confirmar Contraseña" name="password2Admi" requiered>
               </label>
               <br>             
              <div style="text-align: center;padding-top: 10px; padding-bottom: 10px;">
