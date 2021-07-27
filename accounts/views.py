@@ -14,10 +14,7 @@ def registroUsuario(request):
         tipo_usuario=request.POST.get('planta',False)
         password=request.POST['password1Cliente']
         repassword=request.POST['password2Cliente']
-        if tipo_usuario=='on':
-            tipo_usuario=True
-        else:
-            tipo_usuario=False
+        tipo_usuario=False
 
         if password==repassword:
             usuAdd = Usuarios.objects.create(nombres=nombres,usuario=usuario,telefono=telefono,tipo_usuario=tipo_usuario,password=password,email=email)  
