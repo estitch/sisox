@@ -79,32 +79,28 @@
           </div>
         </div>
         <div class="form sign-up">
-          <form action="registroCliente" method="POST">
+          <form action="registroAdministrador" method="POST">
         
             <h2>Registro de Empresa</h2>
            
             <div class="textbox">
               <label >
                 {%csrf_token%}
-              <input type="text" placeholder="Nombre y Apellido" name="first_name" requiered>
+              <input type="text" placeholder="Nombres" name="nombres" requiered>
               </label>
               
             </div>
               <label>
                 {% csrf_token %}
-                <input type="text" placeholder="Nombre de Usuario" name="username" requiered>
+                <input type="text" placeholder="Apellido Paterno" name="apellidopaterno" requiered>
               </label>
               <label>
                 {% csrf_token %}
-                <input type="email"  placeholder="Email" name="emailEmpresa" requiered>
+                <input type="text"  placeholder="Apellido Materno" name="apellidomaterno" requiered>
               </label>
-              <label>
+	       <label>
                 {% csrf_token %}
-                <input type="password"  placeholder="Contraseña" name="password1Empresa" requiered>
-              </label>
-              <label>
-                {% csrf_token %}
-                <input type="password"  placeholder="Confirmar Contraseña" name="password2Empresa" requiered>
+                <input type="email"  placeholder="Correo" name="correo" requiered>
               </label>
               <br>             
              <div style="text-align: center;padding-top: 10px; padding-bottom: 10px;">
