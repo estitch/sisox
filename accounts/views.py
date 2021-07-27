@@ -91,8 +91,8 @@ def logout(request):
     auth.logout(request)
     return redirect('index')
 
-def listar(request):
-    destinos = Usuarios.objects.all()
+def listarAdministrador(request):
+    destinos = Empresa.objects.all()
     data ={
         'destinos':destinos
     }
