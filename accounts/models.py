@@ -28,4 +28,5 @@ class Empresa(models.Model):
     distrito=models.CharField(max_length=255)
     departamento=models.CharField(max_length=255)
     nombre_empresa=models.CharField(max_length=75)
+    tipo_usuario = models.BooleanField(default=False)
 
