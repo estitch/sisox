@@ -71,6 +71,21 @@ def loginUsuario(request):
     else:
         return render(request,'Login.html')
 
+def loginAdministrador(request):
+    if request.method =='POST':
+        
+        username = request.POST['usernameAdmi']
+        email = request.POST['emailAdmi']
+        password = request.POST['passwordAdmi']
+        data=Empresa.objects.get(email=email)
+
+        if password==data.password and username==data.usuario:
+            return render(request,"indexEmpresa.html",{'nombreUsuario': data.usuario})
+        else:
+            return redirect('loginUsuario')
+    else:
+        return render(request,'Login.html')
+
 
 def logout(request):
     auth.logout(request)
