@@ -34,23 +34,23 @@ def registroAdministrador(request):
 
     if request.method == 'POST':
         nombres = request.POST['nameAdmi']
-        usuario = request.POST['usernameAdmi']
+        codigo = request.POST['codigo']
         telefono = request.POST['telAdmi']
         email = request.POST['correoAdmi']
-        tipo_usuario=request.POST.get('planta',False)
+        #tipo_usuario=request.POST.get('planta',False)
         password=request.POST['password1Admi']
         repassword=request.POST['password2Admi']
         tipo_usuario=True
 
         if password==repassword:
-            usuAdd = Empresa.objects.create(nombres=nombres,usuario=usuario,telefono=telefono,tipo_usuario=tipo_usuario,password=password,email=email)  
+            usuAdd = Empresa.objects.create(nombres=nombres,codigo=codigo,telefono=telefono,tipo_usuario=tipo_usuario,password=password,email=email)  
             usuAdd.save();
             print('usuario creado')
             usuarios= Empresa.objects.all()
         else:
             print('password incorrecto')
 
-        return render(request,"indexEmpresa.html",{'nombreUsuario': usuario})
+        return render(request,"indexEmpresa.html",{'nombreUsuario': nombres})
     return render(request, "Registro.html")
 
 def loginUsuario(request):
@@ -74,13 +74,13 @@ def loginUsuario(request):
 def loginAdministrador(request):
     if request.method =='POST':
         
-        username = request.POST['usernameAdmi']
+        nameAdmi = request.POST['nameAdmi']
         email = request.POST['emailAdmi']
         password = request.POST['passwordAdmi']
         data=Empresa.objects.get(email=email)
 
-        if password==data.password and username==data.usuario:
-            return render(request,"indexEmpresa.html",{'nombreUsuario': data.usuario})
+        if password==data.password and nameAdmi==data.nombres:
+            return render(request,"indexEmpresa.html",{'nombreUsuario': data.nombres})
         else:
             return redirect('loginUsuario')
     else:
@@ -92,11 +92,11 @@ def logout(request):
     return redirect('index')
 
 def listar(request):
-    destinos = Usuarios.objects.all()
+    empresas = Empresa.objects.all()
     data ={
-        'destinos':destinos
+        'empresas':empresas
     }
-    return render(request,"indexEmpresa.html",data)
+    return render(request,"listarEmpresas.html",data)
 
 # USUARIO EMPRESA
 def actualizarEmpresa(request):
@@ -119,7 +119,7 @@ def contactanos(request):
     return render(request,"contactanos.html",{})
 
 def usuarioCliente(request):
-    return render(request,"indexUsuario.html",{})
+    return render(request,"indexCliente.html",{})
 
 def reservacion(request):
     return render(request,"reservacion.html",{})
