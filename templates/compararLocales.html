@@ -19,6 +19,7 @@
     <div class="cont">
       <div class="form sign-in">
         <table class="tabla-datos">
+        	<tr>
 	<thead>
 		<tr>
 		   <th>Oxin</th>
@@ -63,65 +64,56 @@
                 </tr>
 
 		</tbody>    
-          
+          </tr>
+                  	<th
+	<thead>
+		<tr>
+		   <th>Oxin</th>
+		</tr>
+	</thead>
+         <tbody>
+		<tr>
+		   <th>Nivel de Ipress</th>
+		   <td>161,81</td>
+		</tr>
+		<tr>
+		   <th>Institucion</th>
+		   <td>165,3</td>
+		</tr>
+		<tr>
+		   <th>Region</th>
+		   <td>164</td>
+		</tr>
+		<tr>
+		   <th>Cilindros Totales</th>
+		   <td>160,6</td>
+		</tr>
+		<tr>
+		   <th>Capacidad de oxigeno</th>
+		   <td>158,46</td>
+		</tr>
+		<tr>
+		   <th>Total de Plantas</th>
+		   <td>160,7</td>
+		</tr>
+		<tr>
+		   <th>Telefono</th>
+		   <td>151,7</td>
+		</tr>
+		<tr>
+		<th>Correo</th>
+                   <td>151,7</td>
+                </tr>
+		<tr>
+                   <th>Precio</th>
+                   <td>151,7</td>
+                </th>
 
+		</tbody>    
+          </td>
         </table>
        </div>
       </div>
-
-      <div class="sub-cont" style="left: 585px;">
-        <div class="img">
-          <div class="img-text m-up" style="left: -25px;">
-            <h2>Si usted tiene una planta de oxígeno</h2>
-            <p style="margin-top: 200px;">pulse aqui.</p>
-           
-          </div>
-          <div class="img-text m-in" style="left: 25px;">
-            <h2>Si desea suministro <br> de oxígeno</h2>
-            <p style="margin-top: 200px;">pulse aqui.</p>
-
-          </div>
-          <div class="img-btn" style="margin-right: 85px;">
-            <span class="m-up" >Iniciar Sesión</span>
-            <span class="m-in">Iniciar Sesión</span>
-          </div>
-        </div>
-        <div class="form sign-up">
-            <form action="loginAdministrador" method="POST" >
-                <h2>¡Bienvenido Empresa! <br> Inicia Sesión</h2>
-                 
-                 <label>
-                   {%csrf_token%}
-                   <span>Nombre de Usuario</span>
-                   <input type="text" name="usernameAdmi" required>
-                 </label>
-                 <label>
-                   {% csrf_token %}
-                   <span>Email</span>
-                   <input type="email"  name="emailAdmi" requiered>
-                 </label>
-                 <label>
-                   {%csrf_token%}
-                  <span>Contraseña</span>
-                   <input type="password" name="passwordAdmi" required>
-                 </label>
-                 <br><br>
-                 
-                 <div >
-                   <table class="default">
-                     <tr>
-                       <td>
-                         <button class="submit" type="btn" style="margin-left: 50px;margin-right: 40px;margin-top: 0px;margin-bottom: 0px;">Iniciar sesión</button>
-                       </td>
-                       <td><button class="submit" type="btn" style="margin-left: 25px;margin-right: 80px;margin-top: 0px;margin-bottom: 0px;"><a href="../" style="color: white; text-decoration: none;">Cancelar</a></button></td>
-                     </tr>
-                   </table>
-                 </div>
-                <p class="forgot-pass">¿Olvidó su Contraseña?</p>
-                
-             </form>
-        </div>
-        </div>
       </div>
     </div>
   </section>
