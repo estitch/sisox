@@ -1,13 +1,18 @@
 
-table, th, td {
+th, td {
     border: 1px solid black;
     border-radius:2px;
 }
 
 th, td {
-    padding: 15px;
+    padding: 5px;
     text-align: center;
 }
+
+tbody tr:nth-child(2n){
+    background: #84abd6;
+}
+
 
 /*table tr:nth-child(even) {
     background-color:rgb(241, 180, 147);
@@ -85,13 +90,24 @@ background-color: #def;
 
 .reserva-button{
 display: inline-block;
-background-color: #050607;
+background-color: #01244c;
 color: #f0e3e3;
 font-size: 13px;
 padding: 12px 14px;
 border-radius: 2px;
 text-decoration: none;
 border: 1px solid transparent;
+}
+
+.reserva-buttons{
+    display: inline-block;
+    background: #713a1f;
+    color: #f0e3e3;
+    font-size: 13px;
+    padding: 12px 14px;
+    border-radius: 2px;
+    text-decoration: none;
+    border: 1px solid transparent;
 }
 
 .reserva-button:hover {
@@ -137,4 +153,32 @@ border: 1px solid #01244c;
         width: 33px;
         height: 33px;
     }
+}
+
+.cebra{
+    border-top: solid 1px;
+    border-left: solid 1px;
+    border-right: solid 1px;
+    border-bottom: solid 1px;
+    max-height: 440px;
+    overflow-y: scroll;
+}
+
+.table-container{
+    max-height: 440px;
+    overflow-y: scroll;
+}
+
+.table-container::-webkit-scrollbar{
+    width: 12px;
+}
+
+.table-container::-webkit-scrollbar-thumb{
+    background: #01244c;
+    border-radius: 5px;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
 }
