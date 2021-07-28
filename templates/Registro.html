@@ -83,17 +83,14 @@
         
             <h2>Registro de Empresa</h2>
            
-            <div class="textbox">
+            <br><br>
+              <input type="number"  placeholder="Codigo Asignado por ESSALUD" name="codigo" requiered>
               <label >
                 {%csrf_token%}
-              <input type="text" placeholder="Nombres" name="nameAdmi" requiered>
+              <input type="text" placeholder="Nombre de Empresa" name="nameAdmi" requiered>
               </label>
               
-            </div>
-              <label>
-                {% csrf_token %}
-                <input type="text" placeholder="Usuario" name="usernameAdmi" requiered>
-              </label>
+           
               <label>
                 {% csrf_token %}
                 <input type="tel"  placeholder="Telefono" name="telAdmi" requiered>
