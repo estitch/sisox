@@ -113,6 +113,16 @@ def actualizarEmpresa(request):
         data.save()
     return render(request,'indexEmpresa.html',{'data':data})
 
+def compararLocales(request):
+
+    if request.method == 'POST':
+        local1 = request.POST['local1']
+        local2 = request.POST['local2']
+        #data.save()
+        #hacer consulta a la base de datos y enviarlo a compararLocales.html
+    return render(request,'compararLocales.html',{})
+
+
 
 
 def contactanos(request):

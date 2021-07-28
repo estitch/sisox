@@ -11,4 +11,5 @@ urlpatterns =[
     path("reservacion",views.reservacion,name ="reservacion"),
     path("logout",views.logout,name ="logout"),
     path("actualizarEmpresa",views.actualizarEmpresa,name ="actualizarEmpresa"),
+    path("compararLocales",views.compararLocales,name ="compararLocales"),
     ]
