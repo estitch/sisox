@@ -1,0 +1,99 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Iniciar Sesión</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+</head>
+<body>
+
+  <header class="header content">
+    <div class="header-video">
+      <div class="overlay"></div>
+      <video src="../static/videos/video.mp4" autoplay loop></video>
+    </div>
+    
+  </header>
+  
+  <section class="top-part">
+    <div class="cont" >
+      <div class="form sign-in">
+        <form action="" method="POST" style="width: 490px;">
+          <h2>Confirmación de la recarga de oxígeno</h2><br><br><br>
+            <table style="width: 500px; height:100px; margin:auto;">
+
+                {%for a in reserva%}
+              
+                <tbody>
+                    <tr>
+                        <th >NOMBRES : </th>
+                        <td>{{a.nombres}}</td>
+                      
+                    </tr>
+                    <tr>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th >DNI   : </th>
+                        <td>{{a.dni}}</td>
+                        
+                    </tr>
+                    <tr>
+                        <th> </th>
+                    </tr>
+                    <tr>
+                        <th >DISTRITO : </th>
+                        <td>{{a.distrito}}</td>
+                    </tr>
+                    <tr>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <th >PROVINCIA : </th>
+                        <td>{{a.provincia}}</td>
+                    </tr>
+                    <tr>
+                        <th> </th>
+                    </tr>
+                    <tr>
+                        <th >FECHA : </th>
+                        <td>{{a.fecha}}</td>
+                    </tr>
+                </tbody>
+              {%endfor%}
+    
+            </table>
+        
+            <div style="text-align: center;padding-top: 10px; padding-bottom: 10px;">
+              <table class="default">
+                <tr>
+                  
+                  <td>
+                    <button class="submit" type="btn" style="margin-left: 150px;margin-right: 20px;margin-top: 100px;margin-bottom: 0px;">
+                    <a href="../accounts/usuarioCliente" style="color: rgb(255, 255, 255); text-decoration: none;">Volver a Inicio</a> 
+                    </button>
+                </td>
+                </tr>
+              </table>
+            </div>
+           
+        </form>
+        
+  
+        
+      </div>
+
+      <div class="sub-cont" style="left: 540px;">
+        <div class="img">
+          <div class="img-text m-up" style="top: 390px;">
+            
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

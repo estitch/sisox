@@ -20,13 +20,13 @@
   <section class="top-part">
     <div class="cont">
       <div class="form sign-in">
-        <form action="" method="POST" style="width: 490px;">
+        <form action="reservar" method="POST" style="width: 490px;">
           <h2>Recarga de Oxigeno</h2>
             <table>
               <th>
                 <label>
                   {%csrf_token%}
-                  <input type="text" name="first_name" placeholder="Nombres Completos" required>
+                  <input type="text" name="nombres" placeholder="Nombres Completos" required>
                 </label>
               </th>
               <th>
@@ -42,13 +42,13 @@
               <th>
                 <label>
                   {%csrf_token%}
-                  <input type="text" name="distrito" placeholder="Distrito" required>
+                  <input type="text" name="distrito" placeholder="Provincia" required>
                 </label>
               </th>
               <th>
                 <label>
                   {%csrf_token%}
-                  <input type="Distrito" name="departamento"  placeholder="Departamento" required>
+                  <input type="Distrito" name="provincia"  placeholder="Distrito" required>
                 </label>
               </th>
             </table>
@@ -56,7 +56,7 @@
             
                 <label>
                   {%csrf_token%}
-                  <input type="datetime-local" name="fecha" min="2018-03-25" max="2018-05-25" step="2" placeholder="fecha" />
+                  <input type="datetime-local" name="fecha"  placeholder="Fecha y Hora" />
                 </label>
               
                 <label>
@@ -73,13 +73,13 @@
                   </td>
                   <td>
                     <button class="submit" type="btn" style="margin-left: 25px;margin-right: 20px;margin-top: 0px;margin-bottom: 0px;">
-                    <a href="../" style="color: rgb(255, 255, 255); text-decoration: none;">Cancelar</a> 
+                    <a href="../accounts/usuarioCliente" style="color: rgb(255, 255, 255); text-decoration: none;">Cancelar</a> 
                     </button>
                 </td>
                 </tr>
               </table>
             </div>
-           <p class="forgot-pass">¿Olvidó su Contraseña?</p>
+           
         </form>
         
   

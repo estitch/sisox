@@ -125,6 +125,21 @@ border: 1px solid #01244c;
     color: #666666;
 }
 
+.reserva-buttons:hover {
+    background-color: transparent;
+    border: 1px solid #713a1f;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    }
+
+.reserva-buttons:disabled,
+.reserva-buttons[disabled]{
+    border: 1px solid #713a1f;
+    background-color: #cccccc;
+    color: #666666;
+}
+
 .desabilitado{
     display: inline-block;
     background-color:rgb(179, 178, 178);

@@ -40,15 +40,14 @@
               <span class="cd-marker item-1"></span>
               <img id="logo2" src="../static/img/LogoPrincipal (1).png" style="left: 20%;">
               <ul>
-                <li class="selected"><a href="#0"><div class="image-icon"><img src="../static/img/home-icon.png"></div><h6>Actualizar <br>datos</h6></a></li>
-                <li><a href="#0"><div class="image-icon"><img src="../static/img/featured-icon.png"></div><h6>Datos <br> Empresa</h6></a></li>
+                <li class="selected"><a href="#0"><div class="image-icon"><img src="../static/img/home-icon.png"></div><h6>Principal</h6></a></li>
                 <li><a href="#0"><div class="image-icon"><img src="../static/img/about-icon.png"></div><h6>Datos<br>Clientes</h6></a></li>
                 <li><a href="#0"><div class="image-icon"><img src="../static/img/contact-icon.png"></div><h6>Soporte <br>Técnico</h6></a></li>
                 <!--<li><a href="#0"><div class="image-icon"><img src="../static/img/projects-icon.png"></div><h6></h6></a></li> -->
               </ul>
               <div class="primary-button" >
-					<h1 style="color: white ;">Bienvenido ,{{nombreUsuario}}</h1>
-					<a href="/accounts/logout">Logout</a>
+					<h1 style="color: white ;">Bienvenido</h1>
+					<a href="/accounts/logout">Cerrar Sesión</a>
               </div>
             </nav> 
           </div> <!-- .cd-slider-nav -->
@@ -66,25 +65,13 @@
                     <div class="col-md-12">
                       <div class="content first-content">
 
-                        <h1 class="titulo">PERFIL</h1>
-
-                        <table>
-                          <tr>
-                            <th>ID</th>
-                            <th>Nombre</th>
-                            <th>Region</th>
-                            <th>Provincia</th>
-                            <th>Distrito</th>
-                          </tr>
-                          {% for a in destinos %}
-                            <tr>
-                              <td>{{a.id}}</td>
-                              <td>{{ a.nombres }}</td>
-                              <td>{{ a.usuario }}</td>
-                              <td><a href="">Eliminar</a></li>
-                            </tr>
-                          {%endfor%}
-                        </table>                        
+                        <h2> SISTEMA DE RESERVACION DE OXÍGENO (SISOX) </h2>
+                        <p style="font-size: 150%;">
+                            Ayuda a que menos personas se contagien y crece con reservaciones online
+                        </p>
+                        <div ><br><br> <img src="../static/img/reservacion.png" style="width: 50%;"></div>
+                        <div class="primary-button">
+                        
                       </div>
                     </div>
                   </div>                  
@@ -104,62 +91,14 @@
                     <div class="col-md-12">
                       <div class="content second-content">
                         <center>
-                          <table>
-                            <caption></caption>
-                            <thead>
-                              <tr>
-                                <th colspan="2">Empresa</th>
-                                <th>Provincia</th>
-                                <th>Distrito</th>
-                                <th></th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td class="imagen"><img src="../static/img/oxyman.gif"></td>
-                                {% for a in destinos %}
-                                  <td></td>
-                                  <td>Arequipa</td>
-                                  <td>Characato</td>
-                                {% endfor %}
-                                <td>
-                                  <div class="reserva-button">
-                                    <a href="#">Reservación</a>
-                                    <a href="#">Detalles</a>
-                                  </div>
-                                </td>
-                              </tr>
-
-                              <tr>
-                                <td class="imagen"><img src="../static/img/LOGO_UNSA.png"></td>
-                                <td>UNSA</td>
-                                <td>Arequipa</td>
-                                <td>Zamácola</td>
-                                <td>
-                                  <div class="reserva-button">
-                                    <a href="#">Reservación</a>
-                                    <a href="#">Detalles</a>
-                                  </div>
-                                </td>
-                              </tr>
-
-                              <tr>
-                                <td class="imagen"><img src="../static/img/Oxigeno PSA.jpg"></td>
-                                <td>Oxigeno PSA</td>
-                                <td>Arequipa</td>
-                                <td>Cayma</td>
-                                <td>
-                                  <div class="reserva-button">
-                                    <a href="#">Reservación</a>
-                                    <a href="#">Detalles</a>
-                                  </div>
-                                </td>
-                              </tr>
-                            </tbody>
-                            <br><br>
-                          </table>
+                          <h3>Visualizar las reservaciones</h3><br>
+                          <div class="primary-button">
+                          <a href="../accounts/ClienteList">Datos Clientes</a>
                         </center>    
                         <br><br>
+                           
+                        
+                      </div>
                     </div>
                   </div>                  
                 </div>
@@ -177,29 +116,11 @@
                   <div class="row">
                     <div class="col-md-12">
                       <div class="content third-content">
-                        <div class="row">
-                          <div class="col-md-7 left-image">
-                            <img src="../static/img/left-feature-image.png">
-                          </div>
-                          <div class="col-md-5">
-                            <div class="right-feature-text">
-                              <h4>Featured Product: <em>Newline</em></h4>
-                              <p>Lorem ipsum dolor amet, consecte adipiscing elit, quisque dictum convallis mi. In dapibus auctor dictum donec mattis quis eros ultricies feugiat. Morbi congue faucibus mi, ague blandit curabitur ac lacinia.</p>
-                              <div class="feature-list">
-                                <ul>
-                                  <p>- Suspendisse mattis finibus sem</p>
-                                  <p>- Pellentesque et urna vel lectus</p>
-                                  <p>- Vestibulum iaculis nisi dui</p>
-                                  <p>- Donec sagittis eros , ac tempus ligula</p>
-                                  <p>- Integer sapien risus, auctor</p>
-                                </ul>
-                              </div>
-                              <div class="primary-button">
-                                <a href="#">Discover More</a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                        
+                          <h3>Si deseas recibir soporte presiona en el siguiente botón y llenea el formulario</h3><br>
+                          <div class="primary-button">
+                           <a href="contactanos2">Soporte</a>
+                        
                       </div>
                     </div>
                   </div>                  

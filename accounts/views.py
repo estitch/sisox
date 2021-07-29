@@ -1,7 +1,7 @@
 from django.shortcuts import redirect, render
 from django.contrib.auth.models import User, auth
 from django.contrib import messages
-from .models import Usuarios,Empresa
+from .models import Usuarios,Empresa,Reservacion
 
 
 def registroUsuario(request):
@@ -25,9 +25,9 @@ def registroUsuario(request):
             print('password incorrecto')
 
         if tipo_usuario==False:
-                return render(request,"indexCliente.html",{'nombreUsuario': usuario})
+                return render(request,"indexCliente.html")
         else :
-                return render(request,"indexEmpresa.html",{'nombreUsuario': usuario})
+                return render(request,"indexEmpresa.html")
     return render(request, "Registro.html")
 
 def registroAdministrador(request):
@@ -50,7 +50,7 @@ def registroAdministrador(request):
         else:
             print('password incorrecto')
 
-        return render(request,"indexEmpresa.html",{'nombreUsuario': nombres})
+        return render(request,"indexEmpresa.html")
     return render(request, "Registro.html")
 
 def loginUsuario(request):
@@ -63,13 +63,38 @@ def loginUsuario(request):
 
         if password==data.password and username==data.usuario:
             if data.tipo_usuario==False:
-                return render(request,"indexCliente.html",{'nombreUsuario': data.usuario})
+                return render(request,"indexCliente.html")
             else :
-                return render(request,"indexEmpresa.html",{'nombreUsuario': data.usuario})
+                return render(request,"indexEmpresa.html")
         else:
             return redirect('loginUsuario')
     else:
         return render(request,'Login.html')
+
+def reservacion(request):
+        return render(request,"reservacion.html")
+
+def reservar(request):
+    if request.method =='POST':
+        nombres = request.POST['nombres']
+        dni = request.POST['dni']
+        distrito = request.POST['distrito']
+        provincia = request.POST['provincia']
+        fecha = request.POST['fecha']
+        
+        usuAdd = Reservacion.objects.create(nombres=nombres,dni=dni,distrito=distrito,provincia=provincia,fecha=fecha)
+        usuAdd.save();
+
+        reserva= Reservacion.objects.all()
+
+        return render(request,"confirmadoCasi.html")
+
+def confirmacion(request):
+    reserva = Reservacion.objects.all()
+    data ={
+        'reserva':reserva
+    }
+    return render(request,"confirmado.html",data)
 
 def loginAdministrador(request):
     if request.method =='POST':
@@ -78,9 +103,8 @@ def loginAdministrador(request):
         email = request.POST['emailAdmi']
         password = request.POST['passwordAdmi']
         data=Empresa.objects.get(email=email)
-
         if password==data.password and nameAdmi==data.nombres:
-            return render(request,"indexEmpresa.html",{'nombreUsuario': data.nombres})
+            return render(request,"indexEmpresa.html")
         else:
             return redirect('loginUsuario')
     else:
@@ -92,11 +116,116 @@ def logout(request):
     return redirect('index')
 
 def listar(request):
-    empresas = Empresa.objects.all()
+    if request.method == 'POST':
+        reg = request.POST['region']
+        cat = request.POST['categoria']
+        print(reg,'\n')
+        print(cat,'\n')
+        if reg=="NINGUNO" and cat== "Ninguno":
+            filtrar = Empresa.objects.all()
+        else:    
+            if reg!= "Ninguno":
+                filtrar = Empresa.objects.filter(region=reg)         
+            if cat!= "Ninguno":
+                filtrar = Empresa.objects.filter(categoria=cat)     
+            if reg!="NINGUNO" and cat!= "Ninguno":
+                filtrar = Empresa.objects.filter(region=reg,categoria=cat)         
+        print("encontrado")
+
+    else:
+        filtrar = Empresa.objects.all().order_by('region','categoria')
+    
+    #se manda si o si
     data ={
-        'empresas':empresas
+        'empresas':filtrar
     }
     return render(request,"listarEmpresas.html",data)
+    
+
+def listarEmpresaCli(request):
+    if request.method == 'POST':
+        reg = request.POST['region']
+        cat = request.POST['categoria']
+        print(reg,'\n')
+        print(cat,'\n')
+        if reg=="NINGUNO" and cat== "Ninguno":
+            filtrar = Empresa.objects.all()
+        else:    
+            if reg!= "Ninguno":
+                filtrar = Empresa.objects.filter(region=reg)         
+            if cat!= "Ninguno":
+                filtrar = Empresa.objects.filter(categoria=cat)     
+            if reg!="NINGUNO" and cat!= "Ninguno":
+                filtrar = Empresa.objects.filter(region=reg,categoria=cat)         
+        print("encontrado")
+
+    else:
+        filtrar = Empresa.objects.all().order_by('region','categoria')
+    
+    #se manda si o si
+    data ={
+        'empresas':filtrar
+    }
+    return render(request,"listarEmpresasCliente.html",data)
+
+def listarComparaciones(request):
+    if request.method == 'POST':
+        reg = request.POST['region']
+        cat = request.POST['categoria']
+        print(reg,'\n')
+        print(cat,'\n')
+        if reg=="NINGUNO" and cat== "Ninguno":
+            filtrar = Empresa.objects.all()
+        else:    
+            if reg!= "Ninguno":
+                filtrar = Empresa.objects.filter(region=reg)         
+            if cat!= "Ninguno":
+                filtrar = Empresa.objects.filter(categoria=cat)     
+            if reg!="NINGUNO" and cat!= "Ninguno":
+                filtrar = Empresa.objects.filter(region=reg,categoria=cat)         
+        print("encontrado")
+
+    else:
+        filtrar = Empresa.objects.all().order_by('region','categoria')
+    
+    #se manda si o si
+    data ={
+        'empresas':filtrar
+    }
+    return render(request,"listarComparaciones.html",data)
+
+def listarComparacionesIndex(request):
+    if request.method == 'POST':
+        reg = request.POST['region']
+        cat = request.POST['categoria']
+        print(reg,'\n')
+        print(cat,'\n')
+        if reg=="NINGUNO" and cat== "Ninguno":
+            filtrar = Empresa.objects.all()
+        else:    
+            if reg!= "Ninguno":
+                filtrar = Empresa.objects.filter(region=reg)         
+            if cat!= "Ninguno":
+                filtrar = Empresa.objects.filter(categoria=cat)     
+            if reg!="NINGUNO" and cat!= "Ninguno":
+                filtrar = Empresa.objects.filter(region=reg,categoria=cat)         
+        print("encontrado")
+
+    else:
+        filtrar = Empresa.objects.all().order_by('region','categoria')
+    
+    #se manda si o si
+    data ={
+        'empresas':filtrar
+    }
+    return render(request,"listarComparacionesIndex.html",data)
+
+def clienteList(request):
+    cliente = Reservacion.objects.all()
+    data ={
+        'cliente':cliente
+    }
+    return render(request,"listarCliente.html",data)
 
 # USUARIO EMPRESA
 def actualizarEmpresa(request):
@@ -111,7 +240,7 @@ def actualizarEmpresa(request):
         data.telefono=request.POST['telefono']
         data.password=request.POST['password1Cliente']
         data.save()
-    return render(request,'indexEmpresa.html',{'data':data})
+    return render(request,'indexEmpresa.html')
 
 def compararLocales(request):
 
@@ -122,7 +251,14 @@ def compararLocales(request):
         #hacer consulta a la base de datos y enviarlo a compararLocales.html
     return render(request,'compararLocales.html',{})
 
+def compararLocalesIndex(request):
 
+    if request.method == 'POST':
+        local1 = request.POST['local1']
+        local2 = request.POST['local2']
+        #data.save()
+        #hacer consulta a la base de datos y enviarlo a compararLocales.html
+    return render(request,'compararLocalesIndex.html',{})
 
 
 def contactanos(request):
@@ -131,8 +267,11 @@ def contactanos(request):
 def usuarioCliente(request):
     return render(request,"indexCliente.html",{})
 
-def reservacion(request):
-    return render(request,"reservacion.html",{})
+def usuarioAdmi(request):
+    return render(request,"indexEmpresa.html",{})
 
 def contactanos1(request):
-    return render(request,"contactanos.html",{})
+    return render(request,"contactanosLogueado.html",{})
+
+def contactanos2(request):
+    return render(request,"contactanosLogueadoE.html",{})

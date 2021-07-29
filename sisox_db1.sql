@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 28-07-2021 a las 03:12:20
--- Versión del servidor: 10.4.19-MariaDB
--- Versión de PHP: 8.0.6
+-- Tiempo de generación: 28-07-2021 a las 08:17:19
+-- Versión del servidor: 10.4.18-MariaDB
+-- Versión de PHP: 8.0.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -44,6 +44,41 @@ CREATE TABLE `accounts_empresa` (
   `provincia` varchar(40) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Volcado de datos para la tabla `accounts_empresa`
+--
+
+INSERT INTO `accounts_empresa` (`nombres`, `telefono`, `email`, `password`, `ruc`, `distrito`, `region`, `nombre_empresa`, `tipo_usuario`, `categoria`, `codigo`, `institucion`, `nivel`, `provincia`) VALUES
+('HOSPITAL II CAJAMARCA\r\n', '989333743\r\n', 'HOSPITALIICAJAMARCA@gmail.com\r\n', '989333743\r\n', '', 'CAJAMARCA\r\n', 'CAJAMARCA\r\n', '', 1, 'II-2', '10272', 'ESSALUD', '2', 'CAJAMARCA'),
+('SERVICIOS MEDICOS CLINICA SANTA ANITA\r\n', '978331862\r\n', 'SERVICIOSMEDICOSCLINICASANTAANITA@gmail.com\r\n', '978331862\r\n', '', 'IQUITOS\r\n', 'LORETO\r\n', '', 1, 'II-1', '12170', 'PRIVADO', '2', 'MAYNAS'),
+('CARLOS ALBERTO CORTEZ JIMENEZ\r\n', '982327003\r\n', 'CARLOSALBERTOCORTEZJIMENEZ@gmail.com\r\n', '982327003\r\n', '', 'TUMBES\r\n', 'TUMBES\r\n', '', 1, 'II-1', '12272', 'ESSALUD', '2', 'TUMBES'),
+('CLINICA PROVIDENCIA\r\n', '976625109\r\n', 'CLINICAPROVIDENCIA@gmail.com\r\n', '976625109\r\n', '', 'SAN MIGUEL\r\n', 'LIMA\r\n', '', 1, 'II-2', '12666', 'PRIVADO', '2', 'LIMA'),
+('CLINICA SANTA MARIA DE CHIMBOTE S.A.C', '963583731', 'santamaria@gmail.com', 'calendin', '', 'CHIMBOTE', 'ANCASH', '', 1, 'II-1', '13164', 'PRIVADO', '2', 'SANTA'),
+('CLINICA SAN JUAN DE DIOS\r\n', '945417386\r\n', 'CLINICASANJUANDEDIOS@gmail.com\r\n', '945417386\r\n', '', 'CAYMA\r\n', 'AREQUIPA\r\n', '', 1, 'II-1', '15730', 'PRIVADO', '2', 'AREQUIPA'),
+('CLINICA VALLESUR\r\n', '970306519\r\n', 'CLINICAVALLESUR@gmail.com\r\n', '970306519\r\n', '', 'AREQUIPA\r\n', 'AREQUIPA\r\n', '', 1, 'II-E', '16744', 'PRIVADO', '2', 'AREQUIPA'),
+('GONZALES PINEDO RODOLFO \r\n', '978784351\r\n', 'GONZALESPINEDORODOLFO@gmail.com\r\n', '978784351\r\n', '', 'LIMA\r\n', 'LIMA\r\n', '', 1, 'II-E', '17392', 'PRIVADO', '2', 'LIMA'),
+('CLINICA GAXAY E.I.R.L\r\n', '988952183\r\n', 'CLINICAGAXAYE.I.R.L@gmail.com\r\n', '988952183\r\n', '', 'CHINCHA ALTA\r\n', 'ICA\r\n', '', 1, 'II-1', '17493', 'PRIVADO', '2', 'CHINCHA'),
+('CLINICA DEL NORTE\r\n', '942457311\r\n', 'CLINICADELNORTE@gmail.com\r\n', '942457311\r\n', '', 'LOS OLIVOS\r\n', 'LIMA\r\n', '', 1, 'II-E', '17847', 'PRIVADO', '2', 'LIMA'),
+('PAMPA GRANDE\r\n', '977779583\r\n', 'PAMPAGRANDE@gmail.com\r\n', '977779583\r\n', '', 'TUMBES\r\n', 'TUMBES\r\n', '', 1, 'I-4', '1882', 'GOBIERNO REGIONAL', '1', 'TUMBES'),
+('CLINICA JAVIER PRADO SANTA MARIA E.I.R.L\r\n', '985815089\r\n', 'CLINICAJAVIERPRADOSANTAMARIAE.I.R.L@gmail.com\r\n', '985815089\r\n', '', 'MARIANO MELGAR\r\n', 'AREQUIPA\r\n', '', 1, 'II-E', '19481', 'PRIVADO', '2', 'AREQUIPA'),
+('CLINICA SANTA LEONOR \r\n', '982599465\r\n', 'CLINICASANTALEONOR@gmail.com\r\n', '982599465\r\n', '', 'CHORRILLO\r\n', 'LIMA\r\n', '', 1, 'II-E', '19839', 'PRIVADO', '2', 'LIMA'),
+('ESTABLECIMIENTO DE SALUD HUANCABAMBA\r\n', '961642261\r\n', 'ESTABLECIMIENTODESALUDHUANCABAMBA@gmail.com\r\n', '961642261\r\n', '', '\r\n', 'PIURA\r\n', '', 1, 'I-4', '2250', 'GOBIERNO REGIONAL', '1', 'HUANCABAMBA HUANCABAMBA'),
+('CLINICA AVANSALUD\r\n', '994662247\r\n', 'CLINICAAVANSALUD@gmail.com\r\n', '994662247\r\n', '', 'MAGDALENA DEL MAR\r\n', 'LIMA\r\n', '', 1, 'II-E', '23022', 'PRIVADO', '2', 'LIMA'),
+('SICUANI\r\n', '992909415\r\n', 'SICUANI@gmail.com\r\n', '992909415\r\n', '', 'SICUANI\r\n', 'CUSCO\r\n', '', 1, 'II-1', '2378', 'GOBIERNO REGIONAL', '2', 'CANCHIS'),
+('OCONGATE\r\n', '997960204\r\n', 'OCONGATE@gmail.com\r\n', '997960204\r\n', '', 'OCOGATE\r\n', 'CUSCO\r\n', '', 1, 'I-4', '2536', 'GOBIERNO REGIONAL', '1', 'QUISPICANCHI'),
+('CLINICA OFTALMOLOGICA VIDAVAS S.A.C.\r\n', '976478125\r\n', 'CLINICAOFTALMOLOGICAVIDAVASS.A.C.@gmail.com\r\n', '976478125\r\n', '', 'CHICLAYO\r\n', 'LAMBAYEQUE\r\n', '', 1, 'II-E', '26707', 'PRIVADO', '2', 'LAMBAYEQUE'),
+('CLINICA AUNA GUARDIA CIVIL\r\n', '992748486\r\n', 'CLINICAAUNAGUARDIACIVIL@gmail.com\r\n', '992748486\r\n', '', 'SAN ISIDRO\r\n', 'LIMA\r\n', '', 1, 'II-E', '27320', 'PRIVADO', '2', 'LIMA'),
+('HOSPITAL ILO\r\n', '991513433\r\n', 'HOSPITALILO@gmail.com\r\n', '991513433\r\n', '', 'ILO\r\n', 'MOQUEGUA\r\n', '', 1, 'II-1', '2818', 'GOBIERNO REGIONAL', '2', 'ILO'),
+('CLINICA ESPECIALIZADA MIRANDA \r\n', '954153257\r\n', 'CLINICAESPECIALIZADAMIRANDA@gmail.com\r\n', '954153257\r\n', '', 'EL TAMBO\r\n', 'JUNIN\r\n', '', 1, 'II-E', '28966', 'PRIVADO', '2', 'HUANCAYO'),
+('HOSPITAL SANDIA\r\n', '965474700\r\n', 'HOSPITALSANDIA@gmail.com\r\n', '965474700\r\n', '', 'SANDIA\r\n', 'PUNO\r\n', '', 1, 'II-1', '3335', 'GOBIERNO REGIONAL', '2', 'SANDIA'),
+('DE APOYO CELENDIN\r\n', '988754509\r\n', 'DEAPOYOCELENDIN@gmail.com\r\n', '988754509\r\n', '', 'CELENDIN\r\n', 'CAJAMARCA\r\n', '', 1, 'II-1\r\n', '4466\r\n', 'GOBIERNO REGIONAL\r\n', '2\r\n', 'CELENDIN\r\n'),
+('HOSPITAL DE BOLIVAR \r\n', '958876592\r\n', 'HOSPITALDEBOLIVAR@gmail.com\r\n', '958876592\r\n', '', 'BOLIVAR\r\n', 'LA LIBERTAR\r\n', '', 1, 'II-1', '5366', 'GOBIERNO REGIONAL', '2', 'BOLIVAR'),
+('ATALAYA\r\n', '966167941\r\n', 'ATALAYA@gmail.com\r\n', '966167941\r\n', '', 'RAIMONDI\r\n', 'UCAYALI\r\n', '', 1, 'I-4', '5502', 'GOBIERNO REGIONAL', '1', 'ATALAYA'),
+('TG LASER OFTALMICA S.A\r\n', '980240637\r\n', 'TGLASEROFTALMICAS.A@gmail.com\r\n', '980240637\r\n', '', 'SAN ISIDRO\r\n', 'LIMA\r\n', '', 1, 'II-E', '8388', 'PRIVADO', '2', 'LIMA'),
+('CLINICA SAN JUAN DE DIOS\r\n', '990297206\r\n', 'CLINICASANJUANDEDIOS@gmail.com\r\n', '990297206\r\n', '', 'SAN LUIS\r\n', 'LIMA\r\n', '', 1, 'II-1', '8786', 'PRIVADO', '2', 'LIMA'),
+('CLINICA MONTE SINAI\r\n', '984585184\r\n', 'CLINICAMONTESINAI@gmail.com\r\n', '984585184\r\n', '', 'LINCE\r\n', 'LIMA\r\n', '', 1, 'II-1', '9145', 'PRIVADO', '2', 'LIMA'),
+('CLINICA SAN BORJA \r\n', '941759521\r\n', 'CLINICASANBORJA@gmail.com\r\n', '941759521\r\n', '', 'SAN BORJA\r\n', 'LIMA\r\n', '', 1, 'III-3', '9886', 'PRIVADO', '2', 'LIMA');
+
 -- --------------------------------------------------------
 
 --
@@ -61,6 +96,13 @@ CREATE TABLE `accounts_usuarios` (
   `password` varchar(75) NOT NULL,
   `tipo_usuario` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `accounts_usuarios`
+--
+
+INSERT INTO `accounts_usuarios` (`id`, `dni`, `nombres`, `usuario`, `telefono`, `email`, `fecha_nacimiento`, `password`, `tipo_usuario`) VALUES
+(1, NULL, 'Estefany Reyna Alfaro Zapana', 'tefa', '978814062', 'ealfaroz@unsa.edu.pe', NULL, 'tefa', 0);
 
 -- --------------------------------------------------------
 
@@ -134,7 +176,87 @@ INSERT INTO `auth_permission` (`id`, `name`, `content_type_id`, `codename`) VALU
 (29, 'Can add usuarios', 8, 'add_usuarios'),
 (30, 'Can change usuarios', 8, 'change_usuarios'),
 (31, 'Can delete usuarios', 8, 'delete_usuarios'),
-(32, 'Can view usuarios', 8, 'view_usuarios');
+(32, 'Can view usuarios', 8, 'view_usuarios'),
+(33, 'Can add auth group', 9, 'add_authgroup'),
+(34, 'Can change auth group', 9, 'change_authgroup'),
+(35, 'Can delete auth group', 9, 'delete_authgroup'),
+(36, 'Can view auth group', 9, 'view_authgroup'),
+(37, 'Can add auth group permissions', 10, 'add_authgrouppermissions'),
+(38, 'Can change auth group permissions', 10, 'change_authgrouppermissions'),
+(39, 'Can delete auth group permissions', 10, 'delete_authgrouppermissions'),
+(40, 'Can view auth group permissions', 10, 'view_authgrouppermissions'),
+(41, 'Can add auth permission', 11, 'add_authpermission'),
+(42, 'Can change auth permission', 11, 'change_authpermission'),
+(43, 'Can delete auth permission', 11, 'delete_authpermission'),
+(44, 'Can view auth permission', 11, 'view_authpermission'),
+(45, 'Can add auth user', 12, 'add_authuser'),
+(46, 'Can change auth user', 12, 'change_authuser'),
+(47, 'Can delete auth user', 12, 'delete_authuser'),
+(48, 'Can view auth user', 12, 'view_authuser'),
+(49, 'Can add auth user groups', 13, 'add_authusergroups'),
+(50, 'Can change auth user groups', 13, 'change_authusergroups'),
+(51, 'Can delete auth user groups', 13, 'delete_authusergroups'),
+(52, 'Can view auth user groups', 13, 'view_authusergroups'),
+(53, 'Can add auth user user permissions', 14, 'add_authuseruserpermissions'),
+(54, 'Can change auth user user permissions', 14, 'change_authuseruserpermissions'),
+(55, 'Can delete auth user user permissions', 14, 'delete_authuseruserpermissions'),
+(56, 'Can view auth user user permissions', 14, 'view_authuseruserpermissions'),
+(57, 'Can add calificacion', 15, 'add_calificacion'),
+(58, 'Can change calificacion', 15, 'change_calificacion'),
+(59, 'Can delete calificacion', 15, 'delete_calificacion'),
+(60, 'Can view calificacion', 15, 'view_calificacion'),
+(61, 'Can add django admin log', 16, 'add_djangoadminlog'),
+(62, 'Can change django admin log', 16, 'change_djangoadminlog'),
+(63, 'Can delete django admin log', 16, 'delete_djangoadminlog'),
+(64, 'Can view django admin log', 16, 'view_djangoadminlog'),
+(65, 'Can add django content type', 17, 'add_djangocontenttype'),
+(66, 'Can change django content type', 17, 'change_djangocontenttype'),
+(67, 'Can delete django content type', 17, 'delete_djangocontenttype'),
+(68, 'Can view django content type', 17, 'view_djangocontenttype'),
+(69, 'Can add django migrations', 18, 'add_djangomigrations'),
+(70, 'Can change django migrations', 18, 'change_djangomigrations'),
+(71, 'Can delete django migrations', 18, 'delete_djangomigrations'),
+(72, 'Can view django migrations', 18, 'view_djangomigrations'),
+(73, 'Can add django session', 19, 'add_djangosession'),
+(74, 'Can change django session', 19, 'change_djangosession'),
+(75, 'Can delete django session', 19, 'delete_djangosession'),
+(76, 'Can view django session', 19, 'view_djangosession'),
+(77, 'Can add ipress', 20, 'add_ipress'),
+(78, 'Can change ipress', 20, 'change_ipress'),
+(79, 'Can delete ipress', 20, 'delete_ipress'),
+(80, 'Can view ipress', 20, 'view_ipress'),
+(81, 'Can add noticia', 21, 'add_noticia'),
+(82, 'Can change noticia', 21, 'change_noticia'),
+(83, 'Can delete noticia', 21, 'delete_noticia'),
+(84, 'Can view noticia', 21, 'view_noticia'),
+(85, 'Can add oxigenodisponible', 22, 'add_oxigenodisponible'),
+(86, 'Can change oxigenodisponible', 22, 'change_oxigenodisponible'),
+(87, 'Can delete oxigenodisponible', 22, 'delete_oxigenodisponible'),
+(88, 'Can view oxigenodisponible', 22, 'view_oxigenodisponible'),
+(89, 'Can add reservacion', 23, 'add_reservacion'),
+(90, 'Can change reservacion', 23, 'change_reservacion'),
+(91, 'Can delete reservacion', 23, 'delete_reservacion'),
+(92, 'Can view reservacion', 23, 'view_reservacion'),
+(93, 'Can add saturacion', 24, 'add_saturacion'),
+(94, 'Can change saturacion', 24, 'change_saturacion'),
+(95, 'Can delete saturacion', 24, 'delete_saturacion'),
+(96, 'Can view saturacion', 24, 'view_saturacion'),
+(97, 'Can add tipousuario', 25, 'add_tipousuario'),
+(98, 'Can change tipousuario', 25, 'change_tipousuario'),
+(99, 'Can delete tipousuario', 25, 'delete_tipousuario'),
+(100, 'Can view tipousuario', 25, 'view_tipousuario'),
+(101, 'Can add usuarioadministrador', 26, 'add_usuarioadministrador'),
+(102, 'Can change usuarioadministrador', 26, 'change_usuarioadministrador'),
+(103, 'Can delete usuarioadministrador', 26, 'delete_usuarioadministrador'),
+(104, 'Can view usuarioadministrador', 26, 'view_usuarioadministrador'),
+(105, 'Can add usuariocliente', 27, 'add_usuariocliente'),
+(106, 'Can change usuariocliente', 27, 'change_usuariocliente'),
+(107, 'Can delete usuariocliente', 27, 'delete_usuariocliente'),
+(108, 'Can view usuariocliente', 27, 'view_usuariocliente'),
+(109, 'Can add puntosred', 28, 'add_puntosred'),
+(110, 'Can change puntosred', 28, 'change_puntosred'),
+(111, 'Can delete puntosred', 28, 'delete_puntosred'),
+(112, 'Can view puntosred', 28, 'view_puntosred');
 
 -- --------------------------------------------------------
 
@@ -214,7 +336,27 @@ CREATE TABLE `django_content_type` (
 --
 
 INSERT INTO `django_content_type` (`id`, `app_label`, `model`) VALUES
+(9, 'accounts', 'authgroup'),
+(10, 'accounts', 'authgrouppermissions'),
+(11, 'accounts', 'authpermission'),
+(12, 'accounts', 'authuser'),
+(13, 'accounts', 'authusergroups'),
+(14, 'accounts', 'authuseruserpermissions'),
+(15, 'accounts', 'calificacion'),
+(16, 'accounts', 'djangoadminlog'),
+(17, 'accounts', 'djangocontenttype'),
+(18, 'accounts', 'djangomigrations'),
+(19, 'accounts', 'djangosession'),
 (7, 'accounts', 'empresa'),
+(20, 'accounts', 'ipress'),
+(21, 'accounts', 'noticia'),
+(22, 'accounts', 'oxigenodisponible'),
+(28, 'accounts', 'puntosred'),
+(23, 'accounts', 'reservacion'),
+(24, 'accounts', 'saturacion'),
+(25, 'accounts', 'tipousuario'),
+(26, 'accounts', 'usuarioadministrador'),
+(27, 'accounts', 'usuariocliente'),
 (8, 'accounts', 'usuarios'),
 (1, 'admin', 'logentry'),
 (3, 'auth', 'group'),
@@ -394,7 +536,7 @@ ALTER TABLE `django_session`
 -- AUTO_INCREMENT de la tabla `accounts_usuarios`
 --
 ALTER TABLE `accounts_usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `auth_group`
@@ -412,7 +554,7 @@ ALTER TABLE `auth_group_permissions`
 -- AUTO_INCREMENT de la tabla `auth_permission`
 --
 ALTER TABLE `auth_permission`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=113;
 
 --
 -- AUTO_INCREMENT de la tabla `auth_user`
@@ -442,7 +584,7 @@ ALTER TABLE `django_admin_log`
 -- AUTO_INCREMENT de la tabla `django_content_type`
 --
 ALTER TABLE `django_content_type`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT de la tabla `django_migrations`

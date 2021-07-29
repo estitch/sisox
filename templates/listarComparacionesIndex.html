@@ -20,7 +20,7 @@
   </header>
   
   <section class="top-part">
-    <div class="cont" style="width: 1350px;  height:700px;">
+    <div class="cont" style="width: 1350px;  height:670px;">
     <br>
     <table style="width: 1210px; margin:auto; border:0px" >
       <tr>
@@ -86,7 +86,7 @@
             <th class="sticky">ACCIONES</th>
         </tr>
         </thead>
-        <br><br>
+        
         <tbody>
           {%for a in empresas%}
                 <tr>
@@ -97,8 +97,7 @@
                     <td>{{ a.distrito }}</td>
                     <td>
                       <div>
-                        <a href="#" class="reserva-button" disabled='True' style="border-radius: 12px;">Reservación</a>
-                        
+                        <input type="checkbox" disable='True' id="vehicle1" name="vehicle1" value="Bike" disabled >
                       </div>
                     </td>
                 </tr>
@@ -108,8 +107,15 @@
       </table>
 
     </div>
-    
-   
+    <br>
+    <div >
+      
+      
+    </div>
+    <div>
+      
+      
+    </div>
   </div>
   </section>
 

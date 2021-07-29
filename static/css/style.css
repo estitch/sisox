@@ -91,7 +91,7 @@ input{
 button{
   display: block;
   margin: 0 auto;
-  width: 160px;
+  width: 190px;
   height: 36px;
   border-radius: 30px;
   color: #fff;
@@ -103,7 +103,7 @@ button{
   margin-top: 10px;
   margin-bottom: 30px;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 700;
   font-family: 'Nunito', sans-serif;
   background: -webkit-linear-gradient(left, #01244c, #713a1f);
 }

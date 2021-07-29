@@ -29,5 +29,12 @@ class Empresa(models.Model):
     nivel = models.CharField(max_length=9, blank=True, null=True)
     institucion = models.CharField(max_length=40, blank=True, null=True)
 
+class Reservacion(models.Model):
+    nombres = models.CharField(max_length=20)
+    dni = models.CharField(max_length=8)
+    distrito = models.CharField(max_length=20)
+    provincia = models.CharField(max_length=20)
+    fecha= models.DateTimeField(auto_now_add=True, null=True)
+
 
 
